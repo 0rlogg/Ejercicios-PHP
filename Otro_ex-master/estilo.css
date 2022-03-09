@@ -1,0 +1,60 @@
+fieldset{
+    border: 0.25em solid;
+    align : center;
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    margin-left: -115px;
+    margin-top: -80px;
+    padding:10px;
+    background-color: #eee;
+}
+fieldset#rtdo{
+    border: 0.25em solid;
+    position: absolute;
+    left: 55%;
+    top: 55%;
+    padding:10px;
+    background-color: #eee;
+}
+fieldset#ayuda{
+    border: 0.25em solid;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    padding:10px;
+    background-color: #eee;
+}
+
+legend{
+    font-size: 2em;
+    color: green;
+    font-weight: bold;
+}
+input[type=submit] {
+    padding:5px 15px 10px 10px;
+    background:#ccc;
+    border:2;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 1em;
+    font-size: 1em;
+}
+label{
+    font-weight: bold;
+    font-size : 1.5em;
+    margin: 0.65em;
+
+}
+input[type=text]{
+    font-weight: bold;
+    font-size : 1.5em;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+}
+#texhelp{
+    font-size : 1.2em;
+}
+
+

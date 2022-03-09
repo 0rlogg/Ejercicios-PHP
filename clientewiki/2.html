@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js ve-not-available" lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="2_files/analytics.js"></script><script async="" src="2_files/load.php"></script>
+<meta charset="UTF-8">
+<title>Curso de JavaScript - WikiEducator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.14">
+<link rel="shortcut icon" href="https://es.wikieducator.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://es.wikieducator.org/opensearch_desc.php" title="WikiEducator (es)">
+<link rel="EditURI" type="application/rsd+xml" href="https://es.wikieducator.org/api.php?action=rsd">
+<link rel="copyright" href="https://es.wikieducator.org/WikiEducator:Copyrights">
+<link rel="alternate" type="application/atom+xml" title="Canal Atom de WikiEducator" href="https://es.wikieducator.org/index.php?title=Especial:CambiosRecientes&amp;feed=atom">
+<link rel="stylesheet" href="2_files/load.css">
+<style>
+.mw-editsection{white-space:nowrap;padding-right:0.25em; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555} .mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-left:-0.25em;margin-right:0.25em;color:#555} .mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-right:-0.25em;margin-left:0.25em;color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:10d5f32d441941e72673fc73cdfe14a9 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(/resources/src/mediawiki.action/images/green-checkmark.png?2015-12-21T01:31:40Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:dc3c2426ffab7f1eea8b656bb518c939 */
+#container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen #playerContainer{position:absolute !important;width:100% !important;height:100%! important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{ left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?2014-07-29T01:15:00Z)}.mw-imported-resource{border:thin solid black}.kaltura-icon{background-image:url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?2014-07-29T01:15:00Z) !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none repeat scroll 0% 0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous} .play-btn-large{width:70px;height:53px;background :url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?2014-07-29T01:15:00Z);position :absolute;cursor :pointer;border :none !important;z-index :1}.play-btn-large:hover{background :url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?2014-07-29T01:15:00Z)}.carouselContainer{position :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px 20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px 6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position :absolute;bottom:23px}.carouselPrevButton{left :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal !important;font-size:14px !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px 10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71)) )}.alert-text{color :black !important}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:bbf132757a4a2998de00c94ff28569b8 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="2_files/load_002.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:8c4a14d995422baef066e088a876e331 */</style>
+<script src="2_files/load_002.php"></script><script src="2_files/load_005.php"></script><style title="spinjs"></style>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"User","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":2,"wgPageName":"Usuario:Juanda/javascript/Sintaxis","wgTitle":"Juanda/javascript/Sintaxis","wgCurRevisionId":9282,"wgRevisionId":9282,"wgArticleId":1765,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Páginas con enlaces rotos a archivos"],"wgBreakFrames":false,"wgPageContentLanguage":"es","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"wgMonthNamesShort":["","ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],"wgRelevantPageName":"Usuario:Juanda/javascript/Sintaxis","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRelevantUserName":"Juanda","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false},"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"/skins/common/images/magnify-clip.png","pageLanguageCode":"es","pageLanguageDir":"ltr","svgMaxSize":2048}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"lqtnotifytalk":false,"lqtdisplaydepth":5,"lqtdisplaycount":25,"lqtcustomsignatures":true,"lqt-watch-threads":true,"upwiz_deflicense":"default","upwiz_def3rdparty":"default","upwiz_deflicensetype":"default","upwiz_maxsimultaneous":"default","visualeditor-enable":0,"visualeditor-enable-experimental":0,"visualeditor-betatempdisable":0,"language":"es","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs90":false,"searchNs91":false,"searchNs92":false,"searchNs93":false,"searchNs100":false,"searchNs101":false,"searchNs102":false,"searchNs103":
+false,"searchNs104":false,"searchNs105":false,"searchNs274":false,"searchNs275":false,"searchNs460":false,"searchNs461":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-Mailable":1,"gadget-mySandbox":1,"gadget-Links":1,"gadget-Subpages":1,"variant":"es"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: we_es-mw_:resourceloader:filter:minify-js:7:895bad9ae2e5451449a48847fc8c772f */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.visualEditor.viewPageTarget.init","skins.vector.js"]);
+}</script><script src="2_files/load_003.php"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-javascript {line-height: normal;}
+.source-javascript li, .source-javascript pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for javascript
+ * CSS class: source-javascript, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.javascript.source-javascript .de1, .javascript.source-javascript .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.javascript.source-javascript  {font-family:monospace;}
+.javascript.source-javascript .imp {font-weight: bold; color: red;}
+.javascript.source-javascript li, .javascript.source-javascript .li1 {font-weight: normal; vertical-align:top;}
+.javascript.source-javascript .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.javascript.source-javascript .li2 {font-weight: bold; vertical-align:top;}
+.javascript.source-javascript .kw1 {color: #000066; font-weight: bold;}
+.javascript.source-javascript .kw2 {color: #003366; font-weight: bold;}
+.javascript.source-javascript .kw3 {color: #000066;}
+.javascript.source-javascript .kw5 {color: #FF0000;}
+.javascript.source-javascript .co1 {color: #006600; font-style: italic;}
+.javascript.source-javascript .co2 {color: #009966; font-style: italic;}
+.javascript.source-javascript .coMULTI {color: #006600; font-style: italic;}
+.javascript.source-javascript .es0 {color: #000099; font-weight: bold;}
+.javascript.source-javascript .br0 {color: #009900;}
+.javascript.source-javascript .sy0 {color: #339933;}
+.javascript.source-javascript .st0 {color: #3366CC;}
+.javascript.source-javascript .nu0 {color: #CC0000;}
+.javascript.source-javascript .me1 {color: #660066;}
+.javascript.source-javascript .ln-xtra, .javascript.source-javascript li.ln-xtra, .javascript.source-javascript div.ln-xtra {background-color: #ffc;}
+.javascript.source-javascript span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-html4strict {line-height: normal;}
+.source-html4strict li, .source-html4strict pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for html4strict
+ * CSS class: source-html4strict, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.html4strict.source-html4strict .de1, .html4strict.source-html4strict .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.html4strict.source-html4strict  {font-family:monospace;}
+.html4strict.source-html4strict .imp {font-weight: bold; color: red;}
+.html4strict.source-html4strict li, .html4strict.source-html4strict .li1 {font-weight: normal; vertical-align:top;}
+.html4strict.source-html4strict .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.html4strict.source-html4strict .li2 {font-weight: bold; vertical-align:top;}
+.html4strict.source-html4strict .kw2 {color: #000000; font-weight: bold;}
+.html4strict.source-html4strict .kw3 {color: #000066;}
+.html4strict.source-html4strict .es0 {color: #000099; font-weight: bold;}
+.html4strict.source-html4strict .br0 {color: #66cc66;}
+.html4strict.source-html4strict .sy0 {color: #66cc66;}
+.html4strict.source-html4strict .st0 {color: #ff0000;}
+.html4strict.source-html4strict .nu0 {color: #cc66cc;}
+.html4strict.source-html4strict .sc-2 {color: #404040;}
+.html4strict.source-html4strict .sc-1 {color: #808080; font-style: italic;}
+.html4strict.source-html4strict .sc0 {color: #00bbdd;}
+.html4strict.source-html4strict .sc1 {color: #ddbb00;}
+.html4strict.source-html4strict .sc2 {color: #009900;}
+.html4strict.source-html4strict .ln-xtra, .html4strict.source-html4strict li.ln-xtra, .html4strict.source-html4strict div.ln-xtra {background-color: #ffc;}
+.html4strict.source-html4strict span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body class="mediawiki ltr sitedir-ltr ns-2 ns-subject page-Usuario_Juanda_javascript_Sintaxis skin-vector action-view vector-animateLayout"><div id="MathJax_Message" style="display: none;"></div>
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<h1 id="firstHeading" class="firstHeading" lang="es"><span dir="auto">Curso de JavaScript</span></h1>
+						<div id="bodyContent">
+								<div id="siteSub">De WikiEducator</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="https://es.wikieducator.org/Usuario:Juanda" title="Usuario:Juanda" userpage-link="true">Usuario:Juanda</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Saltar a:					<a href="#mw-navigation">navegación</a>, 					<a href="#p-search">buscar</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="es"><div id="ProjectNav" class="navigation">
+<div style="float: right;"></div>
+<p style="font-size: 160%; color: #5F666F;">javaScript</p>
+<p><span style="color:green">Tutorial para desarrollar en Web mediante JavaScript</span>
+</p>
+<div id="ProjectNavPages"><strong class="selflink">Introducción</strong>&nbsp;|&nbsp;<a href="2.html" title="Usuario:Juanda/javascript/Sintaxis" userpage-link="true">Elementos del lenguaje</a>&nbsp;|&nbsp;<a href="3.html" title="Usuario:Juanda/javascript/Dom" userpage-link="true">DOM</a> &nbsp;|&nbsp;<a href="4.html" title="Usuario:Juanda/javascript/Eventos" userpage-link="true">Eventos</a> &nbsp;|&nbsp;<a href="5.html" title="Usuario:Juanda/javascript/Formularios" userpage-link="true">Formularios</a> &nbsp;|&nbsp;<a href="6.html" title="Usuario:Juanda/javascript/ExpReg" userpage-link="true">Expresiones regulares</a></div>
+</div>
+<p><br style="clear:both;">
+</p><p><br>
+</p><div id="WEslides"><input type="submit" value="Show presentation" href="#"><br></div>
+<script type="text/javascript">/*<![CDATA[*/
+$(function () {
+  function weSlideShow() {
+    $.getScript(wgServer + '/extensions/WE/Slides/slides.js');
+    $('#WEslides').remove();
+    $('.mw-editsection').remove();
+    return false;
+  }
+
+  var weAPI = wgServer + '/api.php';
+  var narration;
+
+  $.each($('div.slides').attr('class').split(/\s+/), function(i, v) {
+    if (v.indexOf('narration:') === 0) {
+      narration = v.substr('narration:'.length).replace(',', '|');
+    }
+  });
+  if (narration !== undefined) {
+    $.ajax({
+      url: weAPI,
+      data: {
+        action: 'query',
+        format: 'json',
+        prop: 'imageinfo',
+        iiprop: 'url',
+        titles: narration
+      },
+      async: true,
+      dataType: 'json',
+      type: 'POST',
+      success: function(data) {
+        var i, u;
+        var audiotag = '<div id="narrationdiv" style="float: right;"><audio id="narration" controls>';
+        if (data && 'query' in data && 'pages' in data.query) {
+          for (i in data.query.pages) {
+            u = data.query.pages[i].imageinfo[0].url;
+            type = (u.substr(-3) === 'mp3') ? 'mpeg' : 'ogg';
+            audiotag += '<source src="' + u + '" type="audio/' + type + '" />';
+          }
+        }
+        audiotag += '</audio></div>';
+        $('#WEslides').before(audiotag);
+      }
+    });
+  }
+
+  if (window.location.search.indexOf('present') >= 0) { weSlideShow(); } else {
+    $('#WEslides').html('<input type="submit" value="Show presentation" href="#" /><br />');
+    $('#WEslides > input').click(weSlideShow);
+  }
+});
+/*]]>*/</script>  
+<p></p>
+<div class="slides layout-regular template-default">
+<div class="slide">
+<div id="toc" class="toc"><div id="toctitle"><h2>Contenido</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">ocultar</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Elementos_del_lenguaje"><span class="tocnumber">1</span> <span class="toctext">Elementos del lenguaje</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Sintaxis"><span class="tocnumber">1.1</span> <span class="toctext">Sintaxis</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Variables"><span class="tocnumber">1.2</span> <span class="toctext">Variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Ejercicio_3"><span class="tocnumber">2</span> <span class="toctext">Ejercicio 3</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Arrays"><span class="tocnumber">2.1</span> <span class="toctext">Arrays</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Ejercicio_4"><span class="tocnumber">3</span> <span class="toctext">Ejercicio 4</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Booleanos"><span class="tocnumber">3.1</span> <span class="toctext">Booleanos</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Operadores"><span class="tocnumber">3.2</span> <span class="toctext">Operadores</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Operadores_de_asignaci.C3.B3n"><span class="tocnumber">3.2.1</span> <span class="toctext">Operadores de asignación</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Operadores_de_incremento_y_decremento"><span class="tocnumber">3.2.2</span> <span class="toctext">Operadores de incremento y decremento</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Operadores_l.C3.B3gicos"><span class="tocnumber">3.2.3</span> <span class="toctext">Operadores lógicos</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Operadores_matem.C3.A1ticos"><span class="tocnumber">3.2.4</span> <span class="toctext">Operadores matemáticos</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Operadores_relacionales"><span class="tocnumber">3.2.5</span> <span class="toctext">Operadores relacionales</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Sentencias_condicionales"><span class="tocnumber">3.3</span> <span class="toctext">Sentencias condicionales</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#if-else"><span class="tocnumber">3.3.1</span> <span class="toctext">if-else</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#if-else_if_-_else"><span class="tocnumber">3.3.2</span> <span class="toctext">if-else if - else</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#switch"><span class="tocnumber">3.3.3</span> <span class="toctext">switch</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Ventanas_popup"><span class="tocnumber">3.4</span> <span class="toctext">Ventanas popup</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Alert_Box"><span class="tocnumber">3.4.1</span> <span class="toctext">Alert Box</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Prompt_Box"><span class="tocnumber">3.4.2</span> <span class="toctext">Prompt Box</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Confirm_Box"><span class="tocnumber">3.4.3</span> <span class="toctext">Confirm Box</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="#Bucle_for"><span class="tocnumber">3.5</span> <span class="toctext">Bucle for</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Bucle_while"><span class="tocnumber">3.6</span> <span class="toctext">Bucle while</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Bucle_do_..._while"><span class="tocnumber">3.7</span> <span class="toctext">Bucle do ... while</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#break"><span class="tocnumber">3.8</span> <span class="toctext">break</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#continue"><span class="tocnumber">3.9</span> <span class="toctext">continue</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#for_.28variable_in_object.29"><span class="tocnumber">3.10</span> <span class="toctext">for (variable in object)</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Funciones"><span class="tocnumber">3.11</span> <span class="toctext">Funciones</span></a>
+<ul>
+<li class="toclevel-3 tocsection-27"><a href="#Funciones_de_usuario"><span class="tocnumber">3.11.1</span> <span class="toctext">Funciones de usuario</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Funciones_.C3.BAtiles_para_cadenas_de_texto"><span class="tocnumber">3.11.2</span> <span class="toctext">Funciones útiles para cadenas de texto</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#Funciones_.C3.BAtiles_para_arrays"><span class="tocnumber">3.11.3</span> <span class="toctext">Funciones útiles para arrays</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="#Funciones_.C3.BAtiles_para_n.C3.BAmeros"><span class="tocnumber">3.11.4</span> <span class="toctext">Funciones útiles para números</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="#.C3.81mbito_de_las_variables"><span class="tocnumber">3.11.5</span> <span class="toctext">Ámbito de las variables</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Elementos_del_lenguaje">Elementos del lenguaje</span></h1>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Sintaxis">Sintaxis</span></h3>
+<ul>
+<li>JavaScript diferencia MAYÚSCULAS y minúsculas
+</li>
+</ul>
+<ul>
+<li>Las instrucciones no necesitan acabar en punto y coma.
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1">document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"¡Hola Mundo!"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">//también puede acabar en salto de línea:</span>
+document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"¡Hola de nuevo Mundo!"</span><span class="br0">)</span></pre></div></div>
+<ul>
+<li>Comentarios:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// comentario de una línea</span>
+<span class="coMULTI">/* comentario 
+	Multilínea */</span></pre></div></div>
+</div>
+<div class="slide">
+<ul>
+<li> Se ignoran los espacios extras en blanco:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1">nombre<span class="sy0">=</span><span class="st0">"Pepito"</span><span class="sy0">;</span>
+nombre <span class="sy0">=</span> <span class="st0">"Pepito"</span><span class="sy0">;</span></pre></div></div>
+<p>Son equivalentes
+</p>
+<ul>
+<li> Aviso de continuación de sentencia en otra línea:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1">document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"Hello <span class="es0">\</span>
+World!"</span><span class="br0">)</span><span class="sy0">;</span></pre></div></div>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="Variables">Variables</span></h3>
+<ul>
+<li>Declaración de variables
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> x<span class="sy0">;</span>
+<span class="kw1">var</span> _nombrecoche<span class="sy0">;</span></pre></div></div>
+<p>Las variables no se inicializan (su valor está vacío). ¡Habrá que inicializarlas!
+</p>
+<ul>
+<li>Declaración e inicialización de variables
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> x<span class="sy0">=</span><span class="nu0">5</span><span class="sy0">;</span>
+<span class="kw1">var</span> _nombrecoche<span class="sy0">=</span>”volvo”<span class="sy0">;</span></pre></div></div>
+<p>Las variables se pueden declarar e inicializar a la vez. Si es texto, ¡entre comillas!
+</p>
+</div>
+<div class="slide">
+<ul>
+<li>Se pueden utilizar variables sin haber sido declaradas:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> numero_1<span class="sy0">;</span>
+<span class="kw1">var</span> numero_2<span class="sy0">;</span>
+&nbsp;
+numero_1 <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">;</span>
+numero_2 <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+&nbsp;
+resultado <span class="sy0">=</span> numero_1 <span class="sy0">+</span> numero_2<span class="sy0">;</span></pre></div></div>
+</div>
+<div class="slide">
+<ul>
+<li>Numéricas
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> iva <span class="sy0">=</span> <span class="nu0">16</span><span class="sy0">;</span>        <span class="co1">// variable tipo entero</span>
+<span class="kw1">var</span> total <span class="sy0">=</span> <span class="nu0">234.65</span><span class="sy0">;</span>  <span class="co1">// variable tipo decimal</span></pre></div></div>
+<p><br>
+</p>
+<ul>
+<li>Cadenas de texto
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="coMULTI">/* El contenido de texto1 tiene comillas simples, por lo que  
+se encierra con comillas dobles */</span>
+<span class="kw1">var</span> texto1 <span class="sy0">=</span> <span class="st0">"Una frase con 'comillas simples' dentro"</span><span class="sy0">;</span>
+&nbsp;
+<span class="coMULTI">/* El contenido de texto2 tiene comillas dobles, por lo que
+    se encierra con comillas simples */</span>
+<span class="kw1">var</span> texto2 <span class="sy0">=</span> <span class="st0">'Una frase con "comillas dobles" dentro'</span><span class="sy0">;</span></pre></div></div>
+</div>
+<div class="slide">
+<ul>
+<li>Caracteres especiales:
+</li>
+</ul>
+<pre>\'		comilla simple
+\"		comillas
+\&amp;		ampersand
+\\		backslash
+\n		nueva línea
+\r		retorno de carro
+\t		tabulador
+\b		backspace
+\f		form feed
+</pre>
+</div>
+<div class="slide">
+<p><br>
+</p><p><br>
+</p>
+<div style="margin-left: 0px; margin-top: -30px; margin-bottom: -15px; border-style: solid; border-width:1px; border-color: #AAAAAA; padding: 1ex; background-color: #F6F9ED;" class="eXe-iDevice objectives">
+<div class="floatleft"><a href="https://es.wikieducator.org/Special:UploadWizard?wpDestFile=Crystal_Clear_app_vcalendar.png" class="new" title="Archivo:Crystal Clear app vcalendar.png">60px</a></div><h1 style="font-size: 130%; font-weight: bolder; border: none"><span class="mw-headline" id="Ejercicio_3">Ejercicio 3</span></h1><table style="background-color: #F6F9ED;">
+
+
+<tbody><tr>
+<td>
+<p>Crea una página que guarde un texto en una variable y lo muestre luego por pantalla:
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:302px;"><a href="https://es.wikieducator.org/Archivo:Ejercicio3.png" class="image"><img alt="" src="2_files/300px-Ejercicio3.png" class="thumbimage" srcset="2_files/450px-Ejercicio3.png 1.5x, 2_files/Ejercicio3.png 2x" width="300" height="213"></a>  <div class="thumbcaption"><div class="magnify"><a href="https://es.wikieducator.org/Archivo:Ejercicio3.png" class="internal" title="Aumentar"><img src="2_files/magnify-clip.png" alt="" width="15" height="11"></a></div>Pantallazo ejercicio</div></div></div> 
+</td></tr></tbody></table>
+</div>
+<p><br>
+</p>
+</div>
+<div class="slide">
+<ul>
+<li> Solución ejercicio 3:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc0">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span>
+<span class="sc2">&lt;<span class="kw2">html</span> xmlns<span class="sy0">=</span><span class="st0">"http://www.w3.org/1999/xhtml"</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">meta</span> <span class="kw3">http-equiv</span><span class="sy0">=</span><span class="st0">"Content-Type"</span> <span class="kw3">content</span><span class="sy0">=</span><span class="st0">"text/html; charset=utf-8"</span> <span class="sy0">/</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">title</span>&gt;</span>Ejercicio 2 - Mostrar mensajes complejos<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">title</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+  			var msg = "Hola Mundo! \n Qué facil es incluir \'comillas simples\' \n 							y \"comillas dobles\" ";
+  			alert(msg);
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">p</span>&gt;</span>Esta página muestra un mensaje complejo<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">p</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Arrays">Arrays</span></h3>
+<p>Un array es una colección de variables, que pueden ser todas del mismo tipo o cada una de un tipo diferente.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">//variables para los días de la semana:</span>
+<span class="kw1">var</span> dia1 <span class="sy0">=</span> <span class="st0">"Lunes"</span><span class="sy0">;</span>
+<span class="kw1">var</span> dia2 <span class="sy0">=</span> <span class="st0">"Martes"</span><span class="sy0">;</span>
+...
+<span class="kw1">var</span> dia7 <span class="sy0">=</span> <span class="st0">"Domingo"</span><span class="sy0">;</span>
+<span class="co1">//usando un array:</span>
+<span class="kw1">var</span> dias <span class="sy0">=</span> <span class="br0">[</span><span class="st0">"Lunes"</span><span class="sy0">,</span> <span class="st0">"Martes"</span><span class="sy0">,</span> <span class="st0">"Miércoles"</span><span class="sy0">,</span> <span class="st0">"Jueves"</span><span class="sy0">,</span> <span class="st0">"Viernes"</span><span class="sy0">,</span> <span class="st0">"Sábado"</span><span class="sy0">,</span> <span class="st0">"Domingo"</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="co1">//el array empieza en 0</span>
+<span class="kw1">var</span> diaSeleccionado <span class="sy0">=</span> dias<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy0">;</span>    <span class="co1">// diaSeleccionado = "Lunes"</span>
+<span class="kw1">var</span> otroDia <span class="sy0">=</span> dias<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span><span class="sy0">;</span>            <span class="co1">// otroDia = "Sábado"</span></pre></div></div>
+</div>
+<div class="slide">
+<p><br>
+</p><p><br>
+</p>
+<div style="margin-left: 0px; margin-top: -30px; margin-bottom: -15px; border-style: solid; border-width:1px; border-color: #AAAAAA; padding: 1ex; background-color: #F6F9ED;" class="eXe-iDevice objectives">
+<div class="floatleft"><a href="https://es.wikieducator.org/Special:UploadWizard?wpDestFile=Crystal_Clear_app_vcalendar.png" class="new" title="Archivo:Crystal Clear app vcalendar.png">60px</a></div><h1 style="font-size: 130%; font-weight: bolder; border: none"><span class="mw-headline" id="Ejercicio_4">Ejercicio 4</span></h1><table style="background-color: #F6F9ED;">
+
+
+<tbody><tr>
+<td>
+<p>Crear un array llamado meses y que almacene el nombre de los doce 
+meses del año. Mostrar por pantalla los doce nombres utilizando la 
+función alert().
+</p>
+</td></tr></tbody></table>
+</div>
+<p><br>
+</p>
+</div>
+<div class="slide">
+<ul>
+<li> Solución ejercicio 4:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc0">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span>
+<span class="sc2">&lt;<span class="kw2">html</span> xmlns<span class="sy0">=</span><span class="st0">"http://www.w3.org/1999/xhtml"</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">meta</span> <span class="kw3">http-equiv</span><span class="sy0">=</span><span class="st0">"Content-Type"</span> <span class="kw3">content</span><span class="sy0">=</span><span class="st0">"text/html; charset=utf-8"</span> <span class="sy0">/</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">title</span>&gt;</span>Ejercicio 3 - Arrays simples<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">title</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 							"Julio", “Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+			alert(meses[0]); alert(meses[1]);alert(meses[2]);alert(meses[3]);
+			alert(meses[4]); alert(meses[5]);alert(meses[6]);alert(meses[7]);
+			alert(meses[8]); alert(meses[9]);alert(meses[10]);alert(meses[11]);
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+	 <span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">p</span>&gt;</span>Esta página muestra los 12 meses del año<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">p</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Booleanos">Booleanos</span></h3>
+<p>Puede tener 2 valores: false o true.
+Trabajaremos con ellos en programación más avanzada de JavaScript.
+Ejemplos:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> clienteRegistrado <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+<span class="kw1">var</span> ivaIncluido <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Operadores">Operadores</span></h3>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Operadores_de_asignaci.C3.B3n">Operadores de asignación</span></h4>
+<pre>=	+=	-=	*=	/=	%=
+</pre>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">;</span>
+<span class="kw1">var</span> numero2 <span class="sy0">=</span> <span class="nu0">4</span><span class="sy0">;</span>
+&nbsp;
+<span class="nu0">5</span> <span class="sy0">=</span> numero1<span class="sy0">;</span>
+<span class="coMULTI">/* Error, la asignación siempre se realiza a una variable,
+    por lo que en la izquierda no se puede indicar un número */</span> 
+<span class="co1">// Ahora, la variable numero1 vale 5</span>
+numero1 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+<span class="co1">// Ahora, la variable numero1 vale 4</span>
+numero1 <span class="sy0">=</span> numero2<span class="sy0">;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Operadores_de_incremento_y_decremento">Operadores de incremento y decremento</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> numero <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+numero<span class="sy0">=</span>numero <span class="sy0">+</span><span class="nu0">1</span><span class="sy0">;</span>
+alert<span class="br0">(</span>numero<span class="br0">)</span><span class="sy0">;</span>  <span class="co1">// numero = 6</span>
+&nbsp;
+<span class="kw1">var</span> numero <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+<span class="sy0">++</span>numero<span class="sy0">;</span>
+alert<span class="br0">(</span>numero<span class="br0">)</span><span class="sy0">;</span>  <span class="co1">// numero = 6</span>
+&nbsp;
+&nbsp;
+<span class="kw1">var</span> numero <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+numero<span class="sy0">=</span>numero <span class="sy0">-</span> <span class="nu0">1</span><span class="sy0">;</span>
+alert<span class="br0">(</span>numero<span class="br0">)</span><span class="sy0">;</span>  <span class="co1">// numero = 4</span>
+&nbsp;
+<span class="kw1">var</span> numero <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+<span class="sy0">--</span>numero<span class="sy0">;</span>
+alert<span class="br0">(</span>numero<span class="br0">)</span><span class="sy0">;</span>  <span class="co1">// numero = 4</span></pre></div></div>
+</div>
+<div class="slide">
+<p>Los operadores incremento y decremento se pueden ejecutar como prefijo o sufijo:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+<span class="kw1">var</span> numero2 <span class="sy0">=</span> <span class="nu0">2</span><span class="sy0">;</span>
+numero3 <span class="sy0">=</span> numero1<span class="sy0">++</span> <span class="sy0">+</span> numero2<span class="sy0">;</span>
+<span class="co1">// numero3 = 7, numero1 = 6</span>
+&nbsp;
+<span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+<span class="kw1">var</span> numero2 <span class="sy0">=</span> <span class="nu0">2</span><span class="sy0">;</span>
+numero3 <span class="sy0">=</span> <span class="sy0">++</span>numero1 <span class="sy0">+</span> numero2<span class="sy0">;</span>
+<span class="co1">// numero3 = 8, numero1 = 6</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Operadores_l.C3.B3gicos">Operadores lógicos</span></h4>
+<ul>
+<li>Negación
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> visible <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+alert<span class="br0">(</span><span class="sy0">!</span>visible<span class="br0">)</span><span class="sy0">;</span>  <span class="co1">// Muestra "false" y no "true"</span></pre></div></div>
+<ul>
+<li>AND
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> valor1 <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+<span class="kw1">var</span> valor2 <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> valor1 <span class="sy0">&amp;&amp;</span> valor2<span class="sy0">;</span> <span class="co1">// resultado = false</span>
+&nbsp;
+valor1 <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+valor2 <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> valor1 <span class="sy0">&amp;&amp;</span> valor2<span class="sy0">;</span> <span class="co1">// resultado = true</span></pre></div></div>
+</div>
+<div class="slide">
+<ul>
+<li>OR
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> valor1 <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+<span class="kw1">var</span> valor2 <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> valor1 <span class="sy0">||</span> valor2<span class="sy0">;</span> <span class="co1">// resultado = true</span>
+&nbsp;
+valor1 <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+valor2 <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> valor1 <span class="sy0">||</span> valor2<span class="sy0">;</span> <span class="co1">// resultado = false</span></pre></div></div>
+<p><br>
+</p>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Operadores_matem.C3.A1ticos">Operadores matemáticos</span></h4>
+<pre>+	-	*	/	%	
+</pre>
+<ul>
+<li>Ejemplos:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span>
+<span class="kw1">var</span> numero2 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">/</span> numero2<span class="sy0">;</span>  <span class="co1">// resultado = 2</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">%</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = 0</span>
+&nbsp;
+numero1 <span class="sy0">=</span> <span class="nu0">9</span><span class="sy0">;</span>
+numero2 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">%</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = 4</span>
+&nbsp;
+<span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+numero1 <span class="sy0">+=</span> <span class="nu0">3</span><span class="sy0">;</span>  <span class="co1">// numero1 = numero1 + 3 = 8</span>
+numero1 <span class="sy0">-=</span> <span class="nu0">1</span><span class="sy0">;</span>  <span class="co1">// numero1 = numero1 - 1 = 4</span>
+numero1 <span class="sy0">*=</span> <span class="nu0">2</span><span class="sy0">;</span>   <span class="co1">// numero1 = numero1 * 2 = 10</span>
+numero1 <span class="sy0">/=</span> <span class="nu0">5</span><span class="sy0">;</span>   <span class="co1">// numero1 = numero1 / 5 = 1</span>
+numero1 <span class="sy0">%=</span> <span class="nu0">4</span><span class="sy0">;</span>   <span class="co1">// numero1 = numero1&nbsp;% 4 = 1</span></pre></div></div>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h4><span class="mw-headline" id="Operadores_relacionales">Operadores relacionales</span></h4>
+<p>Son: mayor que (&gt;), menor que (&lt;), mayor o igual (&gt;=), menor o igual (&lt;=), igual que (==) y distinto de (!=)
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">;</span>
+<span class="kw1">var</span> numero2 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">&gt;</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = false</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">&lt;</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = true</span>
+&nbsp;
+numero1 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+numero2 <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">&gt;=</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = true</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">&lt;=</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = true</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">==</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = true</span>
+resultado <span class="sy0">=</span> numero1 <span class="sy0">!=</span> numero2<span class="sy0">;</span> <span class="co1">// resultado = false</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Sentencias_condicionales">Sentencias condicionales</span></h3>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="if-else">if-else</span></h4>
+<ul>
+<li>Ejemplo de uso de if en una sentencia condicional
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="sy0">&lt;</span>script type<span class="sy0">=</span><span class="st0">"text/javascript"</span><span class="sy0">&gt;</span>
+	<span class="co1">//Escribe “A desayunar” si son las 9 </span>
+	<span class="kw1">var</span> d<span class="sy0">=</span><span class="kw1">new</span> <span class="kw4">Date</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="kw1">var</span> time<span class="sy0">=</span>d.<span class="me1">getHours</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="kw1">if</span> <span class="br0">(</span>time<span class="sy0">==</span><span class="nu0">9</span><span class="br0">)</span> 
+	<span class="br0">{</span>
+		document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"&lt;b&gt;¡A desayunar!&lt;/b&gt;"</span><span class="br0">)</span><span class="sy0">;</span>	
+	<span class="br0">}</span>
+<span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="if-else_if_-_else">if-else if - else</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="sy0">&lt;</span>script type<span class="sy0">=</span><span class="st0">"text/javascript"</span><span class="sy0">&gt;</span>
+	<span class="kw1">var</span> d <span class="sy0">=</span> <span class="kw1">new</span> <span class="kw4">Date</span><span class="br0">(</span><span class="br0">)</span>
+	<span class="kw1">var</span> time <span class="sy0">=</span> d.<span class="me1">getHours</span><span class="br0">(</span><span class="br0">)</span>
+	<span class="kw1">if</span> <span class="br0">(</span>time<span class="sy0">&gt;</span><span class="nu0">6</span> <span class="sy0">&amp;&amp;</span> time<span class="sy0">&lt;=</span><span class="nu0">14</span><span class="br0">)</span>
+	<span class="br0">{</span>
+	document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"&lt;b&gt;Buenos días&lt;/b&gt;"</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="br0">}</span>
+	<span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>time<span class="sy0">&gt;</span><span class="nu0">14</span> <span class="sy0">&amp;&amp;</span> time<span class="sy0">&lt;</span><span class="nu0">22</span><span class="br0">)</span>
+	<span class="br0">{</span>
+	document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"&lt;b&gt;Buenas tardes&lt;/b&gt;"</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="br0">}</span>
+	<span class="kw1">else</span>
+	<span class="br0">{</span>
+	document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"&lt;b&gt;Buenas noches&lt;/b&gt;"</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="br0">}</span>
+<span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="switch">switch</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="sy0">&lt;</span>script type<span class="sy0">=</span><span class="st0">"text/javascript"</span><span class="sy0">&gt;</span>
+	<span class="co1">//Recibes diferente saludo en función del día de la semana en que estemos</span>
+	<span class="co1">//Domingo=0, Lunes=1 etc.</span>
+	<span class="kw1">var</span> d<span class="sy0">=</span><span class="kw1">new</span> <span class="kw4">Date</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+	dia<span class="sy0">=</span>d.<span class="me1">getDay</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="kw1">switch</span> <span class="br0">(</span>dia<span class="br0">)</span>
+	<span class="br0">{</span>
+		<span class="kw1">case</span> <span class="nu0">5</span><span class="sy0">:</span>
+  			document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"Por fin viernes"</span><span class="br0">)</span><span class="sy0">;</span>
+  			<span class="kw1">break</span><span class="sy0">;</span>
+		<span class="kw1">case</span> <span class="nu0">6</span><span class="sy0">:</span>
+  			document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"Sábado fiestuqui"</span><span class="br0">)</span><span class="sy0">;</span>
+  			<span class="kw1">break</span><span class="sy0">;</span>
+		<span class="kw1">case</span> <span class="nu0">0</span><span class="sy0">:</span>
+  			document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"A dormir que es domingo"</span><span class="br0">)</span><span class="sy0">;</span>
+  			<span class="kw1">break</span><span class="sy0">;</span>
+		<span class="kw1">default</span><span class="sy0">:</span>
+  			document.<span class="me1">write</span><span class="br0">(</span><span class="st0">"¡A ver si llega el fin de semana!"</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="br0">}</span>
+<span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Ventanas_popup">Ventanas popup</span></h3>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Alert_Box">Alert Box</span></h4>
+<p>Presentan un botón de ok. Simplemente muestran información.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			function mostrar_alerta()
+			{
+				alert("¡Hola!" + '\n' + "Me has pulsado!");
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">input</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"button"</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">"mostrar_alerta()"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"Mostrar ventana de alerta"</span> <span class="sy0">/</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Prompt_Box">Prompt Box</span></h4>
+<p>Se utilizan para que el usuario introduzca un valor antes de entrar a la página.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			function disp_prompt()
+			{	
+				var nombre=prompt("Por favor escribe aquí tu nombre","Pepito piscinas");
+				if (nombre!=null <span class="sc1">&amp;&amp; nombre!="")</span>
+<span class="sc1">  				{</span>
+<span class="sc1">  					document.write("Hola " + nombre + "¿Qué tal estás?");</span>
+  				}
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">input</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"button"</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">"disp_prompt()"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"Mostrar un prompt box"</span> <span class="sy0">/</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Confirm_Box">Confirm Box</span></h4>
+<p>Presentan un botón de ok y otro de cancelar. Devuelven verdadero (ok) o falso (cancel).
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			function disp_confirm()
+			{
+				var r=confirm("Pulsa un botón");
+				if (r==true)
+  				{
+  					document.write("¡Has pulsado el botón de OK!");
+  				}
+				else
+ 				{
+  					document.write("¡Has pulsado el botón de cancelar!");
+  				}
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">input</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"button"</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">"disp_confirm()"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"Mostrar un confirm box"</span> <span class="sy0">/</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="Bucle_for">Bucle for</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var i=0;
+			for (i=0;i<span class="sc2">&lt;<span class="sy0">=</span><span class="nu0">10</span>;i++<span class="br0">)</span></span>
+<span class="sc2">			<span class="br0">{</span></span>
+<span class="sc2">				document.write<span class="br0">(</span><span class="st0">"El número es "</span> + i<span class="br0">)</span>;</span>
+<span class="sc2">				document.write<span class="br0">(</span><span class="st0">"&lt;br /&gt;</span></span>");
+			}			
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+<pre>Resultado:
+El número es 0
+El número es 1
+El número es 2
+....
+El número es 10
+</pre>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="Bucle_while">Bucle while</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var i=0;
+			while (i<span class="sc2">&lt;<span class="sy0">=</span><span class="nu0">10</span><span class="br0">)</span></span>
+<span class="sc2">			<span class="br0">{</span></span>
+<span class="sc2">				document.write<span class="br0">(</span><span class="st0">"El número es "</span> + i<span class="br0">)</span>;</span>
+<span class="sc2">				document.write<span class="br0">(</span><span class="st0">"&lt;br /&gt;</span></span>");
+				i=i+1;
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+<pre>Resultado:
+El número es 0
+El número es 1
+El número es 2
+....
+El número es 10
+</pre>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="Bucle_do_..._while">Bucle do ... while</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var i=0;
+			do 
+			{
+				document.write("El número es " + i);
+				document.write("<span class="sc2">&lt;<span class="kw2">br</span> <span class="sy0">/</span>&gt;</span>");
+				i=i+1;
+			}
+			while (i<span class="sc2">&lt;<span class="nu0">0</span><span class="br0">)</span>;</span>
+<span class="sc2">		&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+<pre>Resultado:
+El número es 0
+</pre>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="break">break</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var i=0;
+			for (i=0;i<span class="sc2">&lt;<span class="sy0">=</span><span class="nu0">10</span>;i++<span class="br0">)</span></span>
+<span class="sc2">			<span class="br0">{</span></span>
+<span class="sc2">				if <span class="br0">(</span>i<span class="sy0">==</span><span class="nu0">3</span><span class="br0">)</span></span>
+<span class="sc2">				<span class="br0">{</span></span>
+<span class="sc2">					break;</span>
+<span class="sc2">				<span class="br0">}</span></span>
+<span class="sc2">				document.write<span class="br0">(</span><span class="st0">"El número es "</span> + i<span class="br0">)</span>;</span>
+<span class="sc2">				document.write<span class="br0">(</span><span class="st0">"&lt;br /&gt;</span></span>");
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+<pre>Resultado:
+El número es 0
+El número es 1
+El número es 2
+</pre>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="continue">continue</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var i=0
+			for (i=0;i<span class="sc2">&lt;<span class="sy0">=</span><span class="nu0">4</span>;i++<span class="br0">)</span></span>
+<span class="sc2">			<span class="br0">{</span></span>
+<span class="sc2">				if <span class="br0">(</span>i<span class="sy0">==</span><span class="nu0">3</span><span class="br0">)</span></span>
+<span class="sc2">				<span class="br0">{</span></span>
+<span class="sc2">					continue;</span>
+<span class="sc2">				<span class="br0">}</span></span>
+<span class="sc2">				document.write<span class="br0">(</span>“El número es <span class="st0">" + i);</span>
+<span class="sc2">				document.write("</span>&lt;<span class="kw2">br</span> <span class="sy0">/</span>&gt;</span>");
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+<pre>Resultado:
+El número es 0
+El número es 1
+El número es 2
+El número es 4
+</pre>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="for_.28variable_in_object.29">for (variable in object)</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var x;
+			var mis_coches = new Array();
+			mis_coches[0] = "Saab";
+			mis_coches[1] = "Volvo";
+			mis_coches[2] = "BMW";
+			for (x in mis_coches)
+			{
+				document.write(mis_coches[x] + "<span class="sc2">&lt;<span class="kw2">br</span> <span class="sy0">/</span>&gt;</span>");
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="Funciones">Funciones</span></h3>
+<h4><span class="mw-headline" id="Funciones_de_usuario">Funciones de usuario</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">function</span> nombre_función <span class="br0">(</span>var1<span class="sy0">,</span>var2<span class="sy0">,</span>...<span class="sy0">,</span>varX<span class="br0">)</span>
+<span class="br0">{</span>
+	<span class="co1">//aquí iría el código de la función</span>
+<span class="br0">}</span>
+<span class="co1">//Ejemplo: </span>
+<span class="kw1">function</span> multiplicar<span class="br0">(</span>a<span class="sy0">,</span>b<span class="br0">)</span>
+<span class="br0">{</span>
+x<span class="sy0">=</span>a<span class="sy0">*</span>b<span class="sy0">;</span>
+<span class="kw1">return</span> x<span class="sy0">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Llamada a la función (se guarda en la variable resultado, declarada previamente): 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1">resultado<span class="sy0">=</span>prod<span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">;</span></pre></div></div>
+<p>Las variables son locales a las funciones donde son declaradas. 
+Las variables definidas fuera de las funciones, pueden ser accedidas desde todas.
+</p>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Funciones_.C3.BAtiles_para_cadenas_de_texto">Funciones útiles para cadenas de texto</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">//length, calcula la longitud de una cadena de texto</span>
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> <span class="st0">"Hola Mundo"</span><span class="sy0">;</span>
+<span class="kw1">var</span> numeroLetras <span class="sy0">=</span> mensaje.<span class="me1">length</span><span class="sy0">;</span> <span class="co1">// numeroLetras = 10</span>
+&nbsp;
+<span class="co1">//+, se emplea para concatenar varias cadenas de texto</span>
+<span class="kw1">var</span> mensaje1 <span class="sy0">=</span> <span class="st0">"Hola"</span><span class="sy0">;</span>
+<span class="kw1">var</span> mensaje2 <span class="sy0">=</span> <span class="st0">" Mundo"</span><span class="sy0">;</span>
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> mensaje1 <span class="sy0">+</span> mensaje2<span class="sy0">;</span> <span class="co1">// mensaje = "Hola Mundo"</span>
+&nbsp;
+<span class="co1">//la función concat se utiliza de modo similar al operador +</span>
+<span class="kw1">var</span> mensaje1 <span class="sy0">=</span> <span class="st0">"Hola"</span><span class="sy0">;</span>
+<span class="kw1">var</span> mensaje2 <span class="sy0">=</span> mensaje1.<span class="me1">concat</span><span class="br0">(</span><span class="st0">" Mundo"</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// mensaje2 = "Hola Mundo"</span></pre></div></div>
+</div>
+<div class="slide">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">//toUpperCase(), transforma a mayúsculas</span>
+&nbsp;
+<span class="kw1">var</span> mensaje1 <span class="sy0">=</span> <span class="st0">"Hola"</span><span class="sy0">;</span>
+<span class="kw1">var</span> mensaje2 <span class="sy0">=</span> mensaje1.<span class="me1">toUpperCase</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// mensaje2 = "HOLA"</span>
+&nbsp;
+<span class="co1">//toLowerCase(), transforma a minúsculas:</span>
+<span class="kw1">var</span> mensaje1 <span class="sy0">=</span> <span class="st0">"HolA"</span><span class="sy0">;</span>
+<span class="kw1">var</span> mensaje2 <span class="sy0">=</span> mensaje1.<span class="me1">toLowerCase</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// mensaje2 = "hola"</span>
+&nbsp;
+<span class="co1">//charAt(posicion), obtiene el carácter que se encuentra en la posición indicada:</span>
+&nbsp;
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> <span class="st0">"Hola"</span><span class="sy0">;</span>
+<span class="kw1">var</span> letra <span class="sy0">=</span> mensaje.<span class="me1">charAt</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// letra = H</span>
+letra <span class="sy0">=</span> mensaje.<span class="me1">charAt</span><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>     <span class="co1">// letra = l</span>
+&nbsp;
+<span class="co1">//indexOf(caracter), calcula la primera ocurrencia del carácter indicado</span>
+&nbsp;
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> <span class="st0">"Hola"</span><span class="sy0">;</span>
+<span class="kw1">var</span> posicion <span class="sy0">=</span> mensaje.<span class="me1">indexOf</span><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// posicion = 3</span>
+posicion <span class="sy0">=</span> mensaje.<span class="me1">indexOf</span><span class="br0">(</span><span class="st0">'b'</span><span class="br0">)</span><span class="sy0">;</span>     <span class="co1">// posicion = -1 </span>
+&nbsp;
+<span class="co1">//lastIndexOf(caracter), empieza a buscar por detrás en la cadena</span>
+&nbsp;
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> <span class="st0">"Hola"</span><span class="sy0">;</span>
+<span class="kw1">var</span> posicion <span class="sy0">=</span> mensaje.<span class="me1">lastIndexOf</span><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// posicion = 3</span>
+&nbsp;
+<span class="co1">//función substring(número), extraer parte de la cadena:</span>
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> <span class="st0">"Hola Mundo"</span><span class="sy0">;</span>
+porcion <span class="sy0">=</span> mensaje.<span class="me1">substring</span><span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">;</span>     <span class="co1">// porcion = "Mundo"</span>
+<span class="kw1">var</span> porcion <span class="sy0">=</span> mensaje.<span class="me1">substring</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">8</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// porcion = "ola Mun"</span>
+&nbsp;
+<span class="co1">//función split para obtener arrays de texto:</span>
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> <span class="st0">"Hola Mundo, soy una cadena de texto!"</span><span class="sy0">;</span>
+<span class="kw1">var</span> palabras <span class="sy0">=</span> mensaje.<span class="me1">split</span><span class="br0">(</span><span class="st0">" "</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// palabras = ["Hola", "Mundo,", "soy", "una", "cadena", "de", "texto!"];</span>
+&nbsp;
+<span class="co1">//Con esta función se pueden extraer fácilmente las letras que forman una palabra:</span>
+<span class="kw1">var</span> palabra <span class="sy0">=</span> <span class="st0">"Hola"</span><span class="sy0">;</span>
+<span class="kw1">var</span> letras <span class="sy0">=</span> palabra.<span class="me1">split</span><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// letras = ["H", "o", "l", "a"]</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Funciones_.C3.BAtiles_para_arrays">Funciones útiles para arrays</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">//length, calcula el número de elementos de un array</span>
+<span class="kw1">var</span> vocales <span class="sy0">=</span> <span class="br0">[</span><span class="st0">"a"</span><span class="sy0">,</span> <span class="st0">"e"</span><span class="sy0">,</span> <span class="st0">"i"</span><span class="sy0">,</span> <span class="st0">"o"</span><span class="sy0">,</span> <span class="st0">"u"</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="kw1">var</span> numeroVocales <span class="sy0">=</span> vocales.<span class="me1">length</span><span class="sy0">;</span> <span class="co1">// numeroVocales = 5</span>
+&nbsp;
+<span class="co1">//concat(), se emplea para concatenar los elementos de varios arrays</span>
+<span class="kw1">var</span> array1 <span class="sy0">=</span> <span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="br0">]</span><span class="sy0">;</span>
+array2 <span class="sy0">=</span> array1.<span class="me1">concat</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span> <span class="nu0">5</span><span class="sy0">,</span> <span class="nu0">6</span><span class="br0">)</span><span class="sy0">;</span>   <span class="co1">// array2 = [1, 2, 3, 4, 5, 6]</span>
+&nbsp;
+<span class="co1">//join(separador), es la función contraria a split(). Une los elementos de un array para formar una cadena de texto. </span>
+<span class="kw1">var</span> array <span class="sy0">=</span> <span class="br0">[</span><span class="st0">"hola"</span><span class="sy0">,</span> <span class="st0">"mundo"</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="kw1">var</span> mensaje <span class="sy0">=</span> array.<span class="me1">join</span><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// mensaje = "holamundo"</span>
+<span class="co1">//Para unir los elementos se utiliza el carácter separador indicado:</span>
+mensaje <span class="sy0">=</span> array.<span class="me1">join</span><span class="br0">(</span><span class="st0">" "</span><span class="br0">)</span><span class="sy0">;</span>    <span class="co1">// mensaje = "hola mundo"</span>
+&nbsp;
+<span class="co1">//pop(), elimina el último elemento del array y lo devuelve. El array original se modifica y su longitud disminuye en 1 elemento.</span>
+<span class="kw1">var</span> array <span class="sy0">=</span> <span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="kw1">var</span> ultimo <span class="sy0">=</span> array.<span class="me1">pop</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// ahora array = [1, 2], ultimo = 3</span>
+&nbsp;
+push<span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span> añade un elemento al <span class="kw5">final</span> del array. <span class="me1">El</span> array original se modifica y aumenta su longitud en <span class="nu0">1</span> elemento. 
+<span class="kw1">var</span> array <span class="sy0">=</span> <span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="br0">]</span><span class="sy0">;</span>
+array.<span class="me1">push</span><span class="br0">(</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// ahora array = [1, 2, 3, 4]</span>
+&nbsp;
+<span class="co1">//shift(), elimina el primer elemento del array y lo devuelve. El array original se ve modificado y su longitud disminuida en 1 elemento.</span>
+<span class="kw1">var</span> array <span class="sy0">=</span> <span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="kw1">var</span> primero <span class="sy0">=</span> array.<span class="me1">shift</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// ahora array = [2, 3], primero = 1</span>
+&nbsp;
+<span class="co1">//unshift(), añade un elemento al principio del array. El array original se modifica y aumenta su longitud en 1 elemento. (También es posible añadir más de un elemento a la vez)</span>
+<span class="kw1">var</span> array <span class="sy0">=</span> <span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="br0">]</span><span class="sy0">;</span>
+array.<span class="me1">unshift</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// ahora array = [0, 1, 2, 3]</span>
+&nbsp;
+reverse<span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span> modifica un array colocando sus elementos en el orden inverso a su posición original<span class="sy0">:</span>
+<span class="kw1">var</span> array <span class="sy0">=</span> <span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="br0">]</span><span class="sy0">;</span>
+array.<span class="me1">reverse</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// ahora array = [3, 2, 1]</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Funciones_.C3.BAtiles_para_n.C3.BAmeros">Funciones útiles para números</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">//función isNaN para comprobar si es un número:</span>
+<span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="kw1">var</span> numero2 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+alert<span class="br0">(</span>numero1<span class="sy0">/</span>numero2<span class="br0">)</span><span class="sy0">;</span> <span class="co1">// se muestra el valor NaN</span>
+&nbsp;
+<span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="kw1">var</span> numero2 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>isNaN<span class="br0">(</span>numero1<span class="sy0">/</span>numero2<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+  alert<span class="br0">(</span><span class="st0">"La división no está definida para los números indicados"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="kw1">else</span> <span class="br0">{</span>
+  alert<span class="br0">(</span><span class="st0">"La división es igual a =&gt; "</span> <span class="sy0">+</span> numero1<span class="sy0">/</span>numero2<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="co1">//función toFixed(digitos), devuelve el número con los decimales indicados y los redondeos necesarios:</span>
+<span class="kw1">var</span> numero1 <span class="sy0">=</span> <span class="nu0">4564.34567</span><span class="sy0">;</span>
+numero1.<span class="me1">toFixed</span><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// 4564.35</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id=".C3.81mbito_de_las_variables">Ámbito de las variables</span></h4>
+<ul>
+<li><b>Variables locales:</b> Declaradas dentro de una función. Visibles solo desde la función.
+</li>
+<li><b>Variables globales:</b> Declaradas fuera de las funciones. ¡O sin declarar!
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">function</span> creaMensaje<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> mensaje <span class="sy0">=</span> “Mensaje de prueba”<span class="sy0">;</span>
+  alert<span class="br0">(</span>mensaje<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+CreaMensaje<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">//variable local, el alert tiene mensaje</span>
+&nbsp;
+<span class="kw1">function</span> creaMensaje<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> mensaje <span class="sy0">=</span> “Mensaje de prueba”<span class="sy0">;</span>
+<span class="br0">}</span>
+creaMensaje<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+alert<span class="br0">(</span>mensaje<span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">//variable local, el alert vacío</span></pre></div></div>
+</div>
+<div class="slide">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">var</span> mensaje <span class="sy0">=</span> “Mensaje de prueba”<span class="sy0">;</span>
+&nbsp;
+<span class="kw1">function</span> muestraMensaje<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  alert<span class="br0">(</span>mensaje<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="co1">//variable global, el alert tiene mensaje</span>
+&nbsp;
+&nbsp;
+<span class="kw1">function</span> creaMensaje<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  mensaje <span class="sy0">=</span> <span class="st0">"Mensaje de prueba"</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ creaMensaje<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+alert<span class="br0">(</span>mensaje<span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">//variable global, el alert tiene mensaje</span></pre></div></div>
+</div>
+</div>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.153 seconds
+Real time usage: 0.172 seconds
+Preprocessor visited node count: 670/1000000
+Preprocessor generated node count: 1542/1000000
+Post‐expand include size: 2631/2097152 bytes
+Template argument size: 962/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key we_es-mw_:pcache:idhash:1765-0!*!0!!es!2!* and timestamp 20211129120428 and revision id 9282
+ -->
+</div>								<div class="printfooter">
+				Obtenido de «<a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Sintaxis&amp;oldid=9282">https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Sintaxis&amp;oldid=9282</a>»				</div>
+												<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://es.wikieducator.org/Especial:Categor%C3%ADas" title="Especial:Categorías">Categoría</a>: <ul><li><a href="https://es.wikieducator.org/index.php?title=Categor%C3%ADa:P%C3%A1ginas_con_enlaces_rotos_a_archivos&amp;action=edit&amp;redlink=1" class="new" title="Categoría:Páginas con enlaces rotos a archivos (la página no existe)">Páginas con enlaces rotos a archivos</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Menú de navegación</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Herramientas personales</h3>
+	<ul>
+<li id="pt-createaccount"><a href="https://es.wikieducator.org/index.php?title=Especial:Entrar&amp;returnto=Usuario%3AJuanda%2Fjavascript%2FSintaxis&amp;type=signup">Crear una cuenta</a></li><li id="pt-login"><a href="https://es.wikieducator.org/index.php?title=Especial:Entrar&amp;returnto=Usuario%3AJuanda%2Fjavascript%2FSintaxis" title="Te recomendamos iniciar sesión, sin embargo no es obligatorio [alt-shift-o]" accesskey="o">Iniciar sesión</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Espacios de nombres</h3>
+	<ul>
+					<li id="ca-nstab-user" class="selected"><span><a href="https://es.wikieducator.org/Usuario:Juanda/javascript/Sintaxis" title="Ver la página de usuario [alt-shift-c]" accesskey="c">Página del usuario</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="https://es.wikieducator.org/index.php?title=Usuario_discusi%C3%B3n:Juanda/javascript/Sintaxis&amp;action=edit&amp;redlink=1" title="Discusión acerca del artículo [alt-shift-t]" accesskey="t">Discusión</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label" tabindex="0"><span>Variantes</span><a href="#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Vistas</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="https://es.wikieducator.org/Usuario:Juanda/javascript/Sintaxis">Leer</a></span></li>
+					<li id="ca-viewsource"><span><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Sintaxis&amp;action=edit" title="Esta página está protegida.
+Puedes ver su código fuente [alt-shift-e]" accesskey="e">Ver código</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Sintaxis&amp;action=history" title="Versiones anteriores de esta página y sus autores [alt-shift-h]" accesskey="h">Ver historial</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label" tabindex="0"><span>Acciones</span><a href="#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Buscar</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Buscar" title="Buscar en WikiEducator [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Especial:Buscar" name="title"><input type="submit" name="go" value="Ir" title="Ir al artículo con este nombre exacto si existe" id="searchButton" class="searchButton">		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="collapsible-nav">
+					<div id="p-logo" role="banner"><a style="background-image: url(/skins/common/we/wikieducator.png);" href="https://es.wikieducator.org/P%C3%A1gina_principal" title="Visitar la página principal"></a></div>
+				<div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label">Navegación</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="https://es.wikieducator.org/P%C3%A1gina_principal" title="Visitar la página principal [alt-shift-z]" accesskey="z">Página principal</a></li>
+			<li id="n-recentchanges"><a href="https://es.wikieducator.org/Especial:CambiosRecientes" title="Lista de cambios recientes en el wiki [alt-shift-r]" accesskey="r">Cambios recientes</a></li>
+			<li id="n-randompage"><a href="https://es.wikieducator.org/Especial:Aleatoria" title="Cargar una página al azar [alt-shift-x]" accesskey="x">Página aleatoria</a></li>
+			<li id="n-help"><a href="https://es.wikieducator.org/Ayuda:Ayuda" title="El lugar para aprender">Ayuda</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" tabindex="2"><a href="#" aria-haspopup="true" aria-controls="p-tb-list" role="button" aria-pressed="true" aria-expanded="true">Herramientas</a></h3>
+	<div class="body" style="display: block;">
+		<ul id="p-tb-list">
+			<li id="t-whatlinkshere"><a href="https://es.wikieducator.org/Especial:LoQueEnlazaAqu%C3%AD/Usuario:Juanda/javascript/Sintaxis" title="Lista de todas las páginas del wiki que enlazan aquí [alt-shift-j]" accesskey="j">Lo que enlaza aquí</a></li>
+			<li id="t-recentchangeslinked"><a href="https://es.wikieducator.org/Especial:CambiosEnEnlazadas/Usuario:Juanda/javascript/Sintaxis" title="Cambios recientes en las páginas que enlazan con esta [alt-shift-k]" accesskey="k">Cambios relacionados</a></li>
+			<li id="t-contributions"><a href="https://es.wikieducator.org/Especial:Contribuciones/Juanda" title="Lista de contribuciones de este usuario">Contribuciones del usuario</a></li>
+			<li id="t-log"><a href="https://es.wikieducator.org/Especial:Registro/Juanda">Registros</a></li>
+			<li id="t-upload"><a href="https://es.wikieducator.org/Special:UploadWizard" title="Subir imágenes o archivos multimedia [alt-shift-u]" accesskey="u">Subir un archivo</a></li>
+			<li id="t-specialpages"><a href="https://es.wikieducator.org/Especial:P%C3%A1ginasEspeciales" title="Lista de todas las páginas especiales [alt-shift-q]" accesskey="q">Páginas especiales</a></li>
+			<li id="t-permalink"><a href="#" title="Permanent and short URLs, IFrame snippets for this page" onclick="var weLinks=document.getElementById('weLinks'); if (weLinks.style.display == 'none') { weLinks.style.display = 'block'; weSelectMe(document.getElementById('we_page_iframe'));} else { weLinks.style.display = 'none'; } return false;">Links</a><ul id="weLinks" style="display:none;"><li><a href="https://es.wikieducator.org/index.php?oldid=9282" title="Permanent link to this revision">Permanent Link</a></li><li>IFrame snippet to this revision:<br><span class="weLinkSelect">&lt;iframe src="https://es.wikieducator.org/index.php?oldid=9282" width="100%" height="14334"&gt;WikiEducator &lt;/iframe&gt;</span></li><li><a href="https://es.wikieducator.org/index.php?curid=1765" title="Reference page by article id">Short URL</a></li><li>IFrame snippet to this page:<br><span id="we_page_iframe" class="weLinkSelect">&lt;iframe src="https://es.wikieducator.org/index.php?curid=1765" width="100%" height="14334"&gt;WikiEducator &lt;/iframe&gt;</span></li></ul></li>
+			<li id="t-info"><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Sintaxis&amp;action=info">Información de la página</a></li>
+		<li id="Show subpages of current page"><a href="https://es.wikieducator.org/Special:Prefixindex/Usuario:Juanda/javascript/Sintaxis/" accesskey="#tb-subpages">Subpages</a></li></ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+	<h3 id="p-coll-print_export-label" tabindex="3"><a href="#" aria-haspopup="true" aria-controls="p-coll-print_export-list" role="button" aria-pressed="false" aria-expanded="false">Imprimir/exportar</a></h3>
+	<div class="body">
+		<ul id="p-coll-print_export-list">
+			<li id="coll-create_a_book"><a href="https://es.wikieducator.org/index.php?title=Especial:Libro&amp;bookcmd=book_creator&amp;referer=Usuario%3AJuanda%2Fjavascript%2FSintaxis">Crear un libro</a></li>
+			<li id="coll-download-as-rl"><a href="https://es.wikieducator.org/index.php?title=Especial:Libro&amp;bookcmd=render_article&amp;arttitle=Usuario%3AJuanda%2Fjavascript%2FSintaxis&amp;oldid=9282&amp;writer=rl">Descargar como PDF</a></li>
+			<li id="t-print"><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Sintaxis&amp;printable=yes" title="Versión imprimible de esta página [alt-shift-p]" accesskey="p">Versión para imprimir</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Esta página fue modificada por última vez el 28 sep 2012, a las 11:56.</li>
+											<li id="footer-info-viewcount">Esta página se ha visitado 3964 veces.</li>
+											<li id="footer-info-copyright">El contenido está disponible bajo  <a href="https://es.wikieducator.org/WikiEducator:Copyrights" title="WikiEducator:Copyrights">Creative Commons Attribution Share Alike License</a>  a menos que se indique lo contrario.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://es.wikieducator.org/WikiEducator:Pol%C3%ADtica_de_protecci%C3%B3n_de_datos" title="WikiEducator:Política de protección de datos">Política de protección de datos</a></li>
+											<li id="footer-places-about"><a href="https://es.wikieducator.org/WikiEducator:Acerca_de" title="WikiEducator:Acerca de">Acerca de WikiEducator</a></li>
+											<li id="footer-places-disclaimer"><a href="https://es.wikieducator.org/WikiEducator:Limitaci%C3%B3n_general_de_responsabilidad" title="WikiEducator:Limitación general de responsabilidad">Aviso legal</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="https://creativecommons.org/licenses/by-sa/3.0/"><img src="2_files/cc-by-sa.png" alt="Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="2_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.Links","ext.gadget.Subpages","mw.MwEmbedSupport.style","ext.eventLogging.subscriber","skins.vector.collapsibleNav"],null,true);
+}</script>
+<style>.MathJax_Display{display:inline !important;}
+.mathjax-wrapper{font-size:100%;}</style>
+<script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({displayAlign:'left',tex2jax:{displayMath:[['[math]','[/math]']]}})</script>
+<script src="2_files/MathJax.js"></script>
+<script src="2_files/load_004.php"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+})(window,document,'script','//www.google-analytics.com/analytics.js','hewlettOERTracker'); 
+
+hewlettOERTracker('create', 'UA-5033010-28', 'wikieducator.org'); 
+hewlettOERTracker('send', 'pageview'); 
+
+hewlettOERTracker('create', 'UA-7492888-1', 'wikieducator.org', {'name': 'we'}); 
+hewlettOERTracker('we.send', 'pageview'); 
+</script><script src="2_files/ga.js" type="text/javascript"></script><script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":57});
+}</script>
+	
+
+<div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

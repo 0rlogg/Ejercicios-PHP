@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js ve-not-available" lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="4_files/analytics.js"></script><script async="" src="4_files/load.php"></script>
+<meta charset="UTF-8">
+<title>Curso de JavaScript - WikiEducator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.14">
+<link rel="shortcut icon" href="https://es.wikieducator.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://es.wikieducator.org/opensearch_desc.php" title="WikiEducator (es)">
+<link rel="EditURI" type="application/rsd+xml" href="https://es.wikieducator.org/api.php?action=rsd">
+<link rel="copyright" href="https://es.wikieducator.org/WikiEducator:Copyrights">
+<link rel="alternate" type="application/atom+xml" title="Canal Atom de WikiEducator" href="https://es.wikieducator.org/index.php?title=Especial:CambiosRecientes&amp;feed=atom">
+<link rel="stylesheet" href="4_files/load.css">
+<style>
+.mw-editsection{white-space:nowrap;padding-right:0.25em; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555} .mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-left:-0.25em;margin-right:0.25em;color:#555} .mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-right:-0.25em;margin-left:0.25em;color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:10d5f32d441941e72673fc73cdfe14a9 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(/resources/src/mediawiki.action/images/green-checkmark.png?2015-12-21T01:31:40Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:dc3c2426ffab7f1eea8b656bb518c939 */
+#container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen #playerContainer{position:absolute !important;width:100% !important;height:100%! important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{ left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?2014-07-29T01:15:00Z)}.mw-imported-resource{border:thin solid black}.kaltura-icon{background-image:url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?2014-07-29T01:15:00Z) !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none repeat scroll 0% 0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous} .play-btn-large{width:70px;height:53px;background :url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?2014-07-29T01:15:00Z);position :absolute;cursor :pointer;border :none !important;z-index :1}.play-btn-large:hover{background :url(https://es.wikieducator.org/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?2014-07-29T01:15:00Z)}.carouselContainer{position :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px 20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px 6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position :absolute;bottom:23px}.carouselPrevButton{left :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal !important;font-size:14px !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px 10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71)) )}.alert-text{color :black !important}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:bbf132757a4a2998de00c94ff28569b8 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="4_files/load_002.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: we_es-mw_:resourceloader:filter:minify-css:7:8c4a14d995422baef066e088a876e331 */</style>
+<script src="4_files/load_002.php"></script><script src="4_files/load_005.php"></script><style title="spinjs"></style>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"User","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":2,"wgPageName":"Usuario:Juanda/javascript/Eventos","wgTitle":"Juanda/javascript/Eventos","wgCurRevisionId":9858,"wgRevisionId":9858,"wgArticleId":1812,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"es","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"wgMonthNamesShort":["","ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],"wgRelevantPageName":"Usuario:Juanda/javascript/Eventos","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRelevantUserName":"Juanda","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false},"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"/skins/common/images/magnify-clip.png","pageLanguageCode":"es","pageLanguageDir":"ltr","svgMaxSize":2048}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"lqtnotifytalk":false,"lqtdisplaydepth":5,"lqtdisplaycount":25,"lqtcustomsignatures":true,"lqt-watch-threads":true,"upwiz_deflicense":"default","upwiz_def3rdparty":"default","upwiz_deflicensetype":"default","upwiz_maxsimultaneous":"default","visualeditor-enable":0,"visualeditor-enable-experimental":0,"visualeditor-betatempdisable":0,"language":"es","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs90":false,"searchNs91":false,"searchNs92":false,"searchNs93":false,"searchNs100":false,"searchNs101":false,"searchNs102":false,"searchNs103":
+false,"searchNs104":false,"searchNs105":false,"searchNs274":false,"searchNs275":false,"searchNs460":false,"searchNs461":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-Mailable":1,"gadget-mySandbox":1,"gadget-Links":1,"gadget-Subpages":1,"variant":"es"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: we_es-mw_:resourceloader:filter:minify-js:7:895bad9ae2e5451449a48847fc8c772f */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.visualEditor.viewPageTarget.init","skins.vector.js"]);
+}</script><script src="4_files/load_004.php"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-html4strict {line-height: normal;}
+.source-html4strict li, .source-html4strict pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for html4strict
+ * CSS class: source-html4strict, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.html4strict.source-html4strict .de1, .html4strict.source-html4strict .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.html4strict.source-html4strict  {font-family:monospace;}
+.html4strict.source-html4strict .imp {font-weight: bold; color: red;}
+.html4strict.source-html4strict li, .html4strict.source-html4strict .li1 {font-weight: normal; vertical-align:top;}
+.html4strict.source-html4strict .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.html4strict.source-html4strict .li2 {font-weight: bold; vertical-align:top;}
+.html4strict.source-html4strict .kw2 {color: #000000; font-weight: bold;}
+.html4strict.source-html4strict .kw3 {color: #000066;}
+.html4strict.source-html4strict .es0 {color: #000099; font-weight: bold;}
+.html4strict.source-html4strict .br0 {color: #66cc66;}
+.html4strict.source-html4strict .sy0 {color: #66cc66;}
+.html4strict.source-html4strict .st0 {color: #ff0000;}
+.html4strict.source-html4strict .nu0 {color: #cc66cc;}
+.html4strict.source-html4strict .sc-2 {color: #404040;}
+.html4strict.source-html4strict .sc-1 {color: #808080; font-style: italic;}
+.html4strict.source-html4strict .sc0 {color: #00bbdd;}
+.html4strict.source-html4strict .sc1 {color: #ddbb00;}
+.html4strict.source-html4strict .sc2 {color: #009900;}
+.html4strict.source-html4strict .ln-xtra, .html4strict.source-html4strict li.ln-xtra, .html4strict.source-html4strict div.ln-xtra {background-color: #ffc;}
+.html4strict.source-html4strict span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-javascript {line-height: normal;}
+.source-javascript li, .source-javascript pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for javascript
+ * CSS class: source-javascript, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.javascript.source-javascript .de1, .javascript.source-javascript .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.javascript.source-javascript  {font-family:monospace;}
+.javascript.source-javascript .imp {font-weight: bold; color: red;}
+.javascript.source-javascript li, .javascript.source-javascript .li1 {font-weight: normal; vertical-align:top;}
+.javascript.source-javascript .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.javascript.source-javascript .li2 {font-weight: bold; vertical-align:top;}
+.javascript.source-javascript .kw1 {color: #000066; font-weight: bold;}
+.javascript.source-javascript .kw2 {color: #003366; font-weight: bold;}
+.javascript.source-javascript .kw3 {color: #000066;}
+.javascript.source-javascript .kw5 {color: #FF0000;}
+.javascript.source-javascript .co1 {color: #006600; font-style: italic;}
+.javascript.source-javascript .co2 {color: #009966; font-style: italic;}
+.javascript.source-javascript .coMULTI {color: #006600; font-style: italic;}
+.javascript.source-javascript .es0 {color: #000099; font-weight: bold;}
+.javascript.source-javascript .br0 {color: #009900;}
+.javascript.source-javascript .sy0 {color: #339933;}
+.javascript.source-javascript .st0 {color: #3366CC;}
+.javascript.source-javascript .nu0 {color: #CC0000;}
+.javascript.source-javascript .me1 {color: #660066;}
+.javascript.source-javascript .ln-xtra, .javascript.source-javascript li.ln-xtra, .javascript.source-javascript div.ln-xtra {background-color: #ffc;}
+.javascript.source-javascript span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body class="mediawiki ltr sitedir-ltr ns-2 ns-subject page-Usuario_Juanda_javascript_Eventos skin-vector action-view vector-animateLayout"><div id="MathJax_Message" style="display: none;"></div>
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<h1 id="firstHeading" class="firstHeading" lang="es"><span dir="auto">Curso de JavaScript</span></h1>
+						<div id="bodyContent">
+								<div id="siteSub">De WikiEducator</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="https://es.wikieducator.org/Usuario:Juanda" title="Usuario:Juanda" userpage-link="true">Usuario:Juanda</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Saltar a:					<a href="#mw-navigation">navegación</a>, 					<a href="#p-search">buscar</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="es"><div id="ProjectNav" class="navigation">
+<div style="float: right;"></div>
+<p style="font-size: 160%; color: #5F666F;">javaScript</p>
+<p><span style="color:green">Tutorial para desarrollar en Web mediante JavaScript</span>
+</p>
+<div id="ProjectNavPages"><strong class="selflink">Introducción</strong>&nbsp;|&nbsp;<a href="2.html" title="Usuario:Juanda/javascript/Sintaxis" userpage-link="true">Elementos del lenguaje</a>&nbsp;|&nbsp;<a href="3.html" title="Usuario:Juanda/javascript/Dom" userpage-link="true">DOM</a> &nbsp;|&nbsp;<a href="4.html" title="Usuario:Juanda/javascript/Eventos" userpage-link="true">Eventos</a> &nbsp;|&nbsp;<a href="5.html" title="Usuario:Juanda/javascript/Formularios" userpage-link="true">Formularios</a> &nbsp;|&nbsp;<a href="6.html" title="Usuario:Juanda/javascript/ExpReg" userpage-link="true">Expresiones regulares</a></div>
+</div>
+<p><br style="clear:both;">
+</p><p><br>
+</p><div id="WEslides"><input type="submit" value="Show presentation" href="#"><br></div>
+<script type="text/javascript">/*<![CDATA[*/
+$(function () {
+  function weSlideShow() {
+    $.getScript(wgServer + '/extensions/WE/Slides/slides.js');
+    $('#WEslides').remove();
+    $('.mw-editsection').remove();
+    return false;
+  }
+
+  var weAPI = wgServer + '/api.php';
+  var narration;
+
+  $.each($('div.slides').attr('class').split(/\s+/), function(i, v) {
+    if (v.indexOf('narration:') === 0) {
+      narration = v.substr('narration:'.length).replace(',', '|');
+    }
+  });
+  if (narration !== undefined) {
+    $.ajax({
+      url: weAPI,
+      data: {
+        action: 'query',
+        format: 'json',
+        prop: 'imageinfo',
+        iiprop: 'url',
+        titles: narration
+      },
+      async: true,
+      dataType: 'json',
+      type: 'POST',
+      success: function(data) {
+        var i, u;
+        var audiotag = '<div id="narrationdiv" style="float: right;"><audio id="narration" controls>';
+        if (data && 'query' in data && 'pages' in data.query) {
+          for (i in data.query.pages) {
+            u = data.query.pages[i].imageinfo[0].url;
+            type = (u.substr(-3) === 'mp3') ? 'mpeg' : 'ogg';
+            audiotag += '<source src="' + u + '" type="audio/' + type + '" />';
+          }
+        }
+        audiotag += '</audio></div>';
+        $('#WEslides').before(audiotag);
+      }
+    });
+  }
+
+  if (window.location.search.indexOf('present') >= 0) { weSlideShow(); } else {
+    $('#WEslides').html('<input type="submit" value="Show presentation" href="#" /><br />');
+    $('#WEslides > input').click(weSlideShow);
+  }
+});
+/*]]>*/</script>  
+<p></p>
+<div class="slides layout-regular template-default">
+<div class="slide">
+<div id="toc" class="toc"><div id="toctitle"><h2>Contenido</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">ocultar</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Eventos"><span class="tocnumber">1</span> <span class="toctext">Eventos</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Introducci.C3.B3n"><span class="tocnumber">1.1</span> <span class="toctext">Introducción</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Manejadores_de_eventos"><span class="tocnumber">1.2</span> <span class="toctext">Manejadores de eventos</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Captura_de_errores"><span class="tocnumber">1.3</span> <span class="toctext">Captura de errores</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#try....catch_y_throw"><span class="tocnumber">1.4</span> <span class="toctext">try....catch y throw</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Uso_de_la_variable_this"><span class="tocnumber">1.5</span> <span class="toctext">Uso de la variable this</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Separaci.C3.B3n_de_html_y_javascript"><span class="tocnumber">1.6</span> <span class="toctext">Separación de html y javascript</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#T.C3.A9cnica_de_los_manejadores_sem.C3.A1nticos"><span class="tocnumber">1.6.1</span> <span class="toctext">Técnica de los manejadores semánticos</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Ejemplo:_resaltar_elementos_de_un_formulario_al_recibir_el_foco:"><span class="tocnumber">1.6.2</span> <span class="toctext">Ejemplo: resaltar elementos de un formulario al recibir el foco:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Obteniendo_informaci.C3.B3n_de_eventos:"><span class="tocnumber">1.7</span> <span class="toctext">Obteniendo información de eventos:</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Ejemplo_uso_del_objeto_event:"><span class="tocnumber">1.7.1</span> <span class="toctext">Ejemplo uso del objeto event:</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Eventos_de_teclado"><span class="tocnumber">1.7.2</span> <span class="toctext">Eventos de teclado</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Ejemplo_eventos_teclado"><span class="tocnumber">1.7.3</span> <span class="toctext">Ejemplo eventos teclado</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Ejemplos_eventos_de_rat.C3.B3n"><span class="tocnumber">1.7.4</span> <span class="toctext">Ejemplos eventos de ratón</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Eventos">Eventos</span></h2>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Introducci.C3.B3n">Introducción</span></h3>
+<ul>
+<li>Todos los elementos de una página tienen asociados eventos que pueden disparar funciones de JavaScript.
+</li>
+<li>Hay eventos asociados a la ventana (etiqueta &lt;body&gt;), a los 
+formularios... que se disparan por el ratón, el teclado, la carga de una
+ página o la multimedia.
+</li>
+<li>Un mismo tipo de evento puede estar asociado a elementos html diferentes.
+</li>
+<li>Aumento considerable de los eventos con html5: <a rel="nofollow" class="external text" href="http://www.w3schools.com/tags/ref_eventattributes.asp">Lista de eventos</a>
+</li>
+</ul>
+</div>
+<div class="slide">
+<ul>
+<li>Eventos habituales en el body:
+</li>
+</ul>
+<pre>onload			Esperando a que la página se cargue por completo
+onUnload		Cuando el usuario abandona la página
+</pre>
+<ul>
+<li>Eventos habituales sobre distintas etiquetas, para animaciones:
+</li>
+</ul>
+<pre>onMouseOver             Cuando el ratón está sobre el elemento 
+onMouseOut		Cuando el ratón se mueve fuera del elemento 
+onClick                 Al hacer clic con el ratón
+</pre>
+</div>
+<div class="slide">
+<ul>
+<li>Eventos de formularios
+</li>
+</ul>
+<pre>onFocus			Un elemento coge el foco	 		
+onBlur			Un elemento pierde el foco
+onChange		Un elemento cambia
+onSubmit		Para validar los campos de un formulario antes de enviarlos
+...
+</pre>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Manejadores_de_eventos">Manejadores de eventos</span></h3>
+<p>JavaScript permite asignar una función a cada uno de los eventos. De 
+esta forma, cuando se produce cualquier evento, JavaScript ejecuta su 
+función asociada. Este tipo de funciones se denominan "event handlers" 
+en inglés y suelen traducirse por "manejadores de eventos":
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1">function muestraMensaje() {
+  alert('Gracias por pinchar');
+}
+....
+<span class="sc2">&lt;<span class="kw2">input</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"button"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"Pinchame y verás"</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">"muestraMensaje()"</span> <span class="sy0">/</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Captura_de_errores">Captura de errores</span></h3>
+<ul>
+<li>El <b>evento onerror</b> se dispara cuando hay un error de script en la página
+</li>
+<li>Se debe crear una función que maneje el error.
+</li>
+<li>La función se llama desde el manejador de eventos de onerror con 3 argumentos: 
+</li>
+</ul>
+<dl>
+<dd>msg (mensaje de error)
+</dd>
+<dd>url (la url de la página que ha causado el error)
+</dd>
+<dd>line (la línea en la que ha ocurrido el error).
+</dd>
+</dl>
+</div>
+<div class="slide">
+<ul>
+<li>Ejemplo captura de error con onerror:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			onerror=handleErr;
+			var txt="";
+			function handleErr(msg,url,l)
+			{
+				txt="Ha habido un error en esta página.\n\n";
+				txt+="Error: " + msg + "\n";
+				txt+="URL: " + url + "\n";
+				txt+="Línea: " + l + "\n\n";
+				txt+="Pulsa ok para continuar.\n\n";
+				alert(txt);
+				return true;
+			}
+			function mensaje()
+			{
+				adddlert("¡Bienvenido!");
+			}
+		<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">input</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"button"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"View message"</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">"mensaje()"</span> <span class="sy0">/</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="try....catch_y_throw">try....catch y throw</span></h3>
+<p>Se pueden lanzar errores mediante throw:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+	<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+		<span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span>
+			var x=prompt("Introduce un número entre 0 y 10:","");
+			try
+			{ 
+				if(x&gt;10) 
+					throw "Error1";
+				else if(x<span class="sc2">&lt;<span class="nu0">0</span><span class="br0">)</span></span>
+<span class="sc2">					throw <span class="st0">"Error2"</span>;</span>
+<span class="sc2">			<span class="br0">}</span> </span>
+<span class="sc2">			catch<span class="br0">(</span>er<span class="br0">)</span></span>
+<span class="sc2">			<span class="br0">{</span></span>
+<span class="sc2">				if<span class="br0">(</span>er<span class="sy0">==</span><span class="st0">"Error1"</span><span class="br0">)</span> </span>
+<span class="sc2">					alert<span class="br0">(</span><span class="st0">"¡Error! El valor es muy alto"</span><span class="br0">)</span>;</span>
+<span class="sc2">				if<span class="br0">(</span>er <span class="sy0">==</span> <span class="st0">"Error2"</span><span class="br0">)</span> </span>
+<span class="sc2">					alert<span class="br0">(</span><span class="st0">"¡Error! El valor es muy bajo"</span><span class="br0">)</span>; </span>
+<span class="sc2">			<span class="br0">}</span></span>
+<span class="sc2">		&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Uso_de_la_variable_this">Uso de la variable this</span></h3>
+<p>Modificamos los bordes del elemento al pasar el ratón por encima:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"contenidos"</span> <span class="kw3">style</span><span class="sy0">=</span><span class="st0">"width:150px; height:60px; border:thin solid silver"</span>&gt;</span>
+  Sección de contenidos...
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span></pre></div></div>
+<p>Uso de <b>this</b> para referirse al elemento o etiqueta html que ha provocado el evento:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"contenidos"</span> <span class="kw3">style</span><span class="sy0">=</span><span class="st0">"width:150px; height:60px; border:thin solid silver"</span> </span>
+<span class="sc2">    <span class="kw3">onmouseover</span><span class="sy0">=</span><span class="st0">"document.getElementById('contenidos').style.borderColor='black';"</span> </span>
+<span class="sc2">    <span class="kw3">onmouseout</span><span class="sy0">=</span><span class="st0">"document.getElementById('contenidos').style.borderColor='silver';"</span>&gt;</span>
+  Sección de contenidos...
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<ul>
+<li>Ejemplo de uso de la variable this
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"contenidos"</span> <span class="kw3">style</span><span class="sy0">=</span><span class="st0">"width:150px; height:60px; border:thin solid silver"</span> </span>
+<span class="sc2">    <span class="kw3">onmouseover</span><span class="sy0">=</span><span class="st0">"this.style.borderColor='black';"</span> </span>
+<span class="sc2">    <span class="kw3">onmouseout</span><span class="sy0">=</span><span class="st0">"this.style.borderColor='silver';"</span>&gt;</span>
+  Sección de contenidos...
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<ul>
+<li>Javascript mediante función externa
+</li>
+</ul>
+<dl>
+<dd>Muchas ventajas, pero un inconveniente: No se puede utilizar this
+</dd>
+<dd>Solución: Al llamar a una función, debemos pasar this como parámetro.<br>
+</dd>
+</dl>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">style</span><span class="sy0">=</span><span class="st0">"width:150px; height:60px; border:thin solid silver"</span> </span>
+<span class="sc2">   <span class="kw3">onmouseover</span><span class="sy0">=</span><span class="st0">"resalta(this)"</span> <span class="kw3">onmouseout</span><span class="sy0">=</span><span class="st0">"resalta(this)"</span>&gt;</span>
+  Sección de contenidos...
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<dl>
+<dd>Varios case responden igual debido a las diferentes respuestas de los navegadores.
+</dd>
+</dl>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">function</span> resalta<span class="br0">(</span>elemento<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">switch</span><span class="br0">(</span>elemento.<span class="me1">style</span>.<span class="me1">borderColor</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">case</span> <span class="st0">'silver'</span><span class="sy0">:</span>
+    <span class="kw1">case</span> <span class="st0">'silver silver silver silver'</span><span class="sy0">:</span>
+    <span class="kw1">case</span> <span class="st0">'#c0c0c0'</span><span class="sy0">:</span>
+      elemento.<span class="me1">style</span>.<span class="me1">borderColor</span> <span class="sy0">=</span> <span class="st0">'black'</span><span class="sy0">;</span>
+      <span class="kw1">break</span><span class="sy0">;</span>
+    <span class="kw1">case</span> <span class="st0">'black'</span><span class="sy0">:</span>
+    <span class="kw1">case</span> <span class="st0">'black black black black'</span><span class="sy0">:</span>
+    <span class="kw1">case</span> <span class="st0">'#000000'</span><span class="sy0">:</span>
+      elemento.<span class="me1">style</span>.<span class="me1">borderColor</span> <span class="sy0">=</span> <span class="st0">'silver'</span><span class="sy0">;</span>
+      <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h3><span class="mw-headline" id="Separaci.C3.B3n_de_html_y_javascript">Separación de html y javascript</span></h3>
+<p>Al igual que se intentan separar los contenidos (código html) y el 
+diseño (css), se recomienda separar los contenidos, de su comportamiento
+ (JavaScript). Por ejemplo:<br>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">input</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"pinchable"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"button"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"Pinchame y verás"</span> </span>
+<span class="sc2"><span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">"alert('Gracias por pinchar');"</span> <span class="sy0">/</span>&gt;</span></pre></div></div>
+<p>Se puede transformar en...
+</p>
+</div>
+<div class="slide">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// Función externa</span>
+<span class="kw1">function</span> muestraMensaje<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  alert<span class="br0">(</span><span class="st0">'Gracias por pinchar'</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="co1">// Elemento XHTML</span>
+<span class="sy0">&lt;</span>input id<span class="sy0">=</span><span class="st0">"pinchable"</span> type<span class="sy0">=</span><span class="st0">"button"</span> value<span class="sy0">=</span><span class="st0">"Pinchame y verás"</span> 
+onclick<span class="sy0">=</span><span class="st0">"muestraMensaje()"</span><span class="sy0">/&gt;</span></pre></div></div>
+<ul>
+<li>Podemos dar "un paso más" y lograr una separación mayor:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">function</span> muestraMensaje<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  alert<span class="br0">(</span><span class="st0">'Gracias por pinchar'</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+...
+<span class="sy0">&lt;</span>input id<span class="sy0">=</span><span class="st0">"pinchable"</span> type<span class="sy0">=</span><span class="st0">"button"</span> value<span class="sy0">=</span><span class="st0">"Pinchame y verás"</span> <span class="sy0">/&gt;</span></pre></div></div>
+<ul>
+<li>Usaremos la técnica de los manejadores semánticos...
+</li>
+</ul>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="T.C3.A9cnica_de_los_manejadores_sem.C3.A1nticos">Técnica de los manejadores semánticos</span></h4>
+<p>1. Asignar un identificador único al elemento XHTML mediante el atributo id.<br>
+2. Crear una función de JavaScript encargada de manejar el evento.<br>
+3. Asignar la función externa al evento correspondiente en el elemento deseado.<br>
+</p><p>Dentro de las funciones externas asignadas sí que se puede utilizar la variable <b>this</b> para referirse al elemento que provoca el evento.<br>
+</p><p>Inconveniente: la página se debe cargar completamente antes de 
+que se puedan utilizar las funciones DOM que asignan los manejadores a 
+los elementos html.  ¡Para ello debemos utilizar el <b>evento onload</b>!
+</p>
+</div>
+<div class="slide">
+<ul>
+<li>Separación de html y javascript
+</li>
+</ul>
+<p>Al igual que se intentan separar los contenidos (código html) y el 
+diseño (css), se recomienda separar los contenidos, de su comportamiento
+ (JavaScript). Por ejemplo:<br>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc2">&lt;<span class="kw2">input</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"pinchable"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"button"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"Pinchame y verás"</span> </span>
+<span class="sc2"><span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">"alert('Gracias por pinchar');"</span> <span class="sy0">/</span>&gt;</span></pre></div></div>
+<p>Se puede transformar en...
+</p>
+</div>
+<div class="slide">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// Función externa</span>
+<span class="kw1">function</span> muestraMensaje<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  alert<span class="br0">(</span><span class="st0">'Gracias por pinchar'</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="co1">// Asignar la función externa al elemento, sin parentesis!!!!!</span>
+<span class="co1">// se ejecuta una vez que esté cargado todo el DOM (evento onload)</span>
+<span class="co1">//Si se añaden los paréntesis después del nombre de la función, en realidad se está </span>
+<span class="co1">//ejecutando la función y guardando el valor devuelto por la función en la propiedad </span>
+<span class="co1">//onclick de elemento.</span>
+window.<span class="me1">onload</span> <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  	document.<span class="me1">getElementById</span><span class="br0">(</span><span class="st0">"pinchable"</span><span class="br0">)</span>.<span class="me1">onclick</span> <span class="sy0">=</span> muestraMensaje<span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="co1">// Elemento XHTML</span>
+<span class="sy0">&lt;</span>input id<span class="sy0">=</span><span class="st0">"pinchable"</span> type<span class="sy0">=</span><span class="st0">"button"</span> value<span class="sy0">=</span><span class="st0">"Pinchame y verás"</span> <span class="sy0">/&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Ejemplo:_resaltar_elementos_de_un_formulario_al_recibir_el_foco:">Ejemplo: resaltar elementos de un formulario al recibir el foco:</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="kw1">function</span> resalta<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="co1">// Código JavaScript</span>
+<span class="br0">}</span>
+&nbsp;
+window.<span class="me1">onload</span> <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> formulario <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">(</span><span class="st0">"formulario"</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">var</span> camposInput <span class="sy0">=</span> formulario.<span class="me1">getElementsByTagName</span><span class="br0">(</span><span class="st0">"input"</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw1">for</span><span class="br0">(</span><span class="kw1">var</span> i<span class="sy0">=</span><span class="nu0">0</span><span class="sy0">;</span> i<span class="sy0">&lt;</span>camposInput.<span class="me1">length</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span><span class="br0">(</span>camposInput<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">type</span> <span class="sy0">==</span> <span class="st0">"text"</span><span class="br0">)</span> <span class="br0">{</span>
+      camposInput<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">onclick</span> <span class="sy0">=</span> resalta<span class="sy0">;</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
+</div>
+<div class="slide">
+<h3><span class="mw-headline" id="Obteniendo_informaci.C3.B3n_de_eventos:">Obteniendo información de eventos:</span></h3>
+<ul>
+<li>Mediante el objeto event.
+</li>
+</ul>
+<dl>
+<dd>Windows considera que el objeto proviene del objeto window.
+</dd>
+<dd>el resto de navegadores lo muestran como "un parámetro mágico" de la función
+</dd>
+</dl>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1"><span class="co1">//Solución unificada:</span>
+<span class="kw1">function</span> manejadorEventos<span class="br0">(</span>elEvento<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> evento <span class="sy0">=</span> elEvento <span class="sy0">||</span> window.<span class="me1">event</span><span class="sy0">;</span>
+<span class="br0">}</span></pre></div></div>
+</div>
+<p><br>
+</p>
+<div class="slide">
+<h4><span class="mw-headline" id="Ejemplo_uso_del_objeto_event:">Ejemplo uso del objeto event:</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="html4strict source-html4strict"><pre class="de1">function resalta(elEvento) {
+  var evento = elEvento || window.event;
+//el tipo de evento va sin el "on":
+  switch(evento.type) {
+    case 'mouseover':
+      this.style.borderColor = 'black';
+      break;
+    case 'mouseout':
+      this.style.borderColor = 'silver';
+      break;
+  }
+}
+&nbsp;
+window.onload = function() {
+  document.getElementById("seccion").onmouseover = resalta;
+  document.getElementById("seccion").onmouseout = resalta;
+}
+&nbsp;
+<span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"seccion"</span> <span class="kw3">style</span><span class="sy0">=</span><span class="st0">"width:150px; height:60px; border:thin solid silver"</span>&gt;</span>
+  Sección de contenidos...
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Eventos_de_teclado">Eventos de teclado</span></h4>
+<ul>
+<li>Cuando un usuario pulsa una tecla normal, se producen tres eventos seguidos y en este orden: onkeydown, onkeypress y onkeyup. 
+</li>
+</ul>
+<dl>
+<dd>El evento onkeydown se corresponde con el hecho de pulsar una tecla y no soltarla.
+</dd>
+<dd>El evento onkeypress es la propia pulsación de la tecla 
+</dd>
+<dd>El evento onkeyup hace referencia al hecho de soltar una tecla que estaba pulsada.
+</dd>
+</dl>
+<ul>
+<li>La forma más sencilla de obtener la información sobre la tecla que 
+se ha pulsado es mediante el evento onkeypress. Sin embargo no todos los
+ navegadores funcionan igual, existen teclas especiales...
+</li>
+</ul>
+</div>
+<p><br>
+</p><p><br>
+</p><p><br>
+</p><p><br>
+</p>
+<div class="slide">
+<h4><span class="mw-headline" id="Ejemplo_eventos_teclado">Ejemplo eventos teclado</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1">window.<span class="me1">onload</span> <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  document.<span class="me1">onkeyup</span> <span class="sy0">=</span> muestraInformacion<span class="sy0">;</span>
+  document.<span class="me1">onkeypress</span> <span class="sy0">=</span> muestraInformacion<span class="sy0">;</span>
+  document.<span class="me1">onkeydown</span> <span class="sy0">=</span> muestraInformacion<span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw1">function</span> muestraInformacion<span class="br0">(</span>elEvento<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> evento <span class="sy0">=</span> window.<span class="me1">event</span> <span class="sy0">||</span> elEvento<span class="sy0">;</span>
+&nbsp;
+  <span class="kw1">var</span> mensaje <span class="sy0">=</span> <span class="st0">"Tipo de evento: "</span> <span class="sy0">+</span> evento.<span class="me1">type</span> <span class="sy0">+</span> <span class="st0">"&lt;br&gt;"</span> <span class="sy0">+</span>
+                <span class="st0">"Propiedad keyCode: "</span> <span class="sy0">+</span> evento.<span class="me1">keyCode</span> <span class="sy0">+</span> <span class="st0">"&lt;br&gt;"</span> <span class="sy0">+</span>
+                <span class="st0">"Propiedad charCode: "</span> <span class="sy0">+</span> evento.<span class="me1">charCode</span> <span class="sy0">+</span> <span class="st0">"&lt;br&gt;"</span> <span class="sy0">+</span>
+                <span class="st0">"Carácter pulsado: "</span> <span class="sy0">+</span> <span class="kw4">String</span>.<span class="me1">fromCharCode</span><span class="br0">(</span>evento.<span class="me1">charCode</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+  info.<span class="me1">innerHTML</span> <span class="sy0">+=</span> <span class="st0">"&lt;br&gt;--------------------------------------&lt;br&gt;"</span> <span class="sy0">+</span> mensaje
+<span class="br0">}</span>
+&nbsp;
+...
+&nbsp;
+<span class="sy0">&lt;</span>div id<span class="sy0">=</span><span class="st0">"info"</span><span class="sy0">&gt;&lt;/</span>div<span class="sy0">&gt;</span></pre></div></div>
+</div>
+<div class="slide">
+<ul>
+<li> Solución independiente del navegador:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1">&nbsp;
+<span class="kw1">function</span> manejador<span class="br0">(</span>elEvento<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> evento <span class="sy0">=</span> elEvento <span class="sy0">||</span> window.<span class="me1">event</span><span class="sy0">;</span>
+  <span class="kw1">var</span> caracter <span class="sy0">=</span> evento.<span class="me1">charCode</span> <span class="sy0">||</span> evento.<span class="me1">keyCode</span><span class="sy0">;</span>
+  alert<span class="br0">(</span><span class="st0">"El carácter pulsado es: "</span> <span class="sy0">+</span> <span class="kw4">String</span>.<span class="me1">fromCharCode</span><span class="br0">(</span>caracter<span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+document.<span class="me1">onkeypress</span> <span class="sy0">=</span> manejador<span class="sy0">;</span></pre></div></div>
+</div>
+<div class="slide">
+<h4><span class="mw-headline" id="Ejemplos_eventos_de_rat.C3.B3n">Ejemplos eventos de ratón</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="javascript source-javascript"><pre class="de1">&nbsp;
+<span class="kw1">function</span> muestraInformacion<span class="br0">(</span>elEvento<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> evento <span class="sy0">=</span> elEvento <span class="sy0">||</span> window.<span class="me1">event</span><span class="sy0">;</span>
+  <span class="kw1">var</span> coordenadaX <span class="sy0">=</span> evento.<span class="me1">clientX</span><span class="sy0">;</span>
+  <span class="kw1">var</span> coordenadaY <span class="sy0">=</span> evento.<span class="me1">clientY</span><span class="sy0">;</span>
+<span class="coMULTI">/*las coordenadas respecto a la pantalla serían:
+var coordenadaX = evento.screenX;
+var coordenadaY = evento.screenY;
+*/</span>
+  alert<span class="br0">(</span><span class="st0">"Has pulsado el ratón en la posición: "</span> <span class="sy0">+</span> coordenadaX <span class="sy0">+</span> <span class="st0">", "</span> <span class="sy0">+</span> coordenadaY<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+document.<span class="me1">onclick</span> <span class="sy0">=</span> muestraInformacion<span class="sy0">;</span></pre></div></div>
+</div>
+<p><br>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.077 seconds
+Real time usage: 0.082 seconds
+Preprocessor visited node count: 317/1000000
+Preprocessor generated node count: 734/1000000
+Post‐expand include size: 1535/2097152 bytes
+Template argument size: 634/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key we_es-mw_:pcache:idhash:1812-0!*!0!!es!*!* and timestamp 20211129120439 and revision id 9858
+ -->
+</div>								<div class="printfooter">
+				Obtenido de «<a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Eventos&amp;oldid=9858">https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Eventos&amp;oldid=9858</a>»				</div>
+												<div id="catlinks" class="catlinks catlinks-allhidden"></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Menú de navegación</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Herramientas personales</h3>
+	<ul>
+<li id="pt-createaccount"><a href="https://es.wikieducator.org/index.php?title=Especial:Entrar&amp;returnto=Usuario%3AJuanda%2Fjavascript%2FEventos&amp;type=signup">Crear una cuenta</a></li><li id="pt-login"><a href="https://es.wikieducator.org/index.php?title=Especial:Entrar&amp;returnto=Usuario%3AJuanda%2Fjavascript%2FEventos" title="Te recomendamos iniciar sesión, sin embargo no es obligatorio [alt-shift-o]" accesskey="o">Iniciar sesión</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Espacios de nombres</h3>
+	<ul>
+					<li id="ca-nstab-user" class="selected"><span><a href="https://es.wikieducator.org/Usuario:Juanda/javascript/Eventos" title="Ver la página de usuario [alt-shift-c]" accesskey="c">Página del usuario</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="https://es.wikieducator.org/index.php?title=Usuario_discusi%C3%B3n:Juanda/javascript/Eventos&amp;action=edit&amp;redlink=1" title="Discusión acerca del artículo [alt-shift-t]" accesskey="t">Discusión</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label" tabindex="0"><span>Variantes</span><a href="#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Vistas</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="https://es.wikieducator.org/Usuario:Juanda/javascript/Eventos">Leer</a></span></li>
+					<li id="ca-viewsource"><span><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Eventos&amp;action=edit" title="Esta página está protegida.
+Puedes ver su código fuente [alt-shift-e]" accesskey="e">Ver código</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Eventos&amp;action=history" title="Versiones anteriores de esta página y sus autores [alt-shift-h]" accesskey="h">Ver historial</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label" tabindex="0"><span>Acciones</span><a href="#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Buscar</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Buscar" title="Buscar en WikiEducator [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Especial:Buscar" name="title"><input type="submit" name="go" value="Ir" title="Ir al artículo con este nombre exacto si existe" id="searchButton" class="searchButton">		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="collapsible-nav">
+					<div id="p-logo" role="banner"><a style="background-image: url(/skins/common/we/wikieducator.png);" href="https://es.wikieducator.org/P%C3%A1gina_principal" title="Visitar la página principal"></a></div>
+				<div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label">Navegación</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="https://es.wikieducator.org/P%C3%A1gina_principal" title="Visitar la página principal [alt-shift-z]" accesskey="z">Página principal</a></li>
+			<li id="n-recentchanges"><a href="https://es.wikieducator.org/Especial:CambiosRecientes" title="Lista de cambios recientes en el wiki [alt-shift-r]" accesskey="r">Cambios recientes</a></li>
+			<li id="n-randompage"><a href="https://es.wikieducator.org/Especial:Aleatoria" title="Cargar una página al azar [alt-shift-x]" accesskey="x">Página aleatoria</a></li>
+			<li id="n-help"><a href="https://es.wikieducator.org/Ayuda:Ayuda" title="El lugar para aprender">Ayuda</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" tabindex="2"><a href="#" aria-haspopup="true" aria-controls="p-tb-list" role="button" aria-pressed="true" aria-expanded="true">Herramientas</a></h3>
+	<div class="body" style="display: block;">
+		<ul id="p-tb-list">
+			<li id="t-whatlinkshere"><a href="https://es.wikieducator.org/Especial:LoQueEnlazaAqu%C3%AD/Usuario:Juanda/javascript/Eventos" title="Lista de todas las páginas del wiki que enlazan aquí [alt-shift-j]" accesskey="j">Lo que enlaza aquí</a></li>
+			<li id="t-recentchangeslinked"><a href="https://es.wikieducator.org/Especial:CambiosEnEnlazadas/Usuario:Juanda/javascript/Eventos" title="Cambios recientes en las páginas que enlazan con esta [alt-shift-k]" accesskey="k">Cambios relacionados</a></li>
+			<li id="t-contributions"><a href="https://es.wikieducator.org/Especial:Contribuciones/Juanda" title="Lista de contribuciones de este usuario">Contribuciones del usuario</a></li>
+			<li id="t-log"><a href="https://es.wikieducator.org/Especial:Registro/Juanda">Registros</a></li>
+			<li id="t-upload"><a href="https://es.wikieducator.org/Special:UploadWizard" title="Subir imágenes o archivos multimedia [alt-shift-u]" accesskey="u">Subir un archivo</a></li>
+			<li id="t-specialpages"><a href="https://es.wikieducator.org/Especial:P%C3%A1ginasEspeciales" title="Lista de todas las páginas especiales [alt-shift-q]" accesskey="q">Páginas especiales</a></li>
+			<li id="t-permalink"><a href="#" title="Permanent and short URLs, IFrame snippets for this page" onclick="var weLinks=document.getElementById('weLinks'); if (weLinks.style.display == 'none') { weLinks.style.display = 'block'; weSelectMe(document.getElementById('we_page_iframe'));} else { weLinks.style.display = 'none'; } return false;">Links</a><ul id="weLinks" style="display:none;"><li><a href="https://es.wikieducator.org/index.php?oldid=9858" title="Permanent link to this revision">Permanent Link</a></li><li>IFrame snippet to this revision:<br><span class="weLinkSelect">&lt;iframe src="https://es.wikieducator.org/index.php?oldid=9858" width="100%" height="6822"&gt;WikiEducator &lt;/iframe&gt;</span></li><li><a href="https://es.wikieducator.org/index.php?curid=1812" title="Reference page by article id">Short URL</a></li><li>IFrame snippet to this page:<br><span id="we_page_iframe" class="weLinkSelect">&lt;iframe src="https://es.wikieducator.org/index.php?curid=1812" width="100%" height="6822"&gt;WikiEducator &lt;/iframe&gt;</span></li></ul></li>
+			<li id="t-info"><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Eventos&amp;action=info">Información de la página</a></li>
+		<li id="Show subpages of current page"><a href="https://es.wikieducator.org/Special:Prefixindex/Usuario:Juanda/javascript/Eventos/" accesskey="#tb-subpages">Subpages</a></li></ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+	<h3 id="p-coll-print_export-label" tabindex="3"><a href="#" aria-haspopup="true" aria-controls="p-coll-print_export-list" role="button" aria-pressed="false" aria-expanded="false">Imprimir/exportar</a></h3>
+	<div class="body">
+		<ul id="p-coll-print_export-list">
+			<li id="coll-create_a_book"><a href="https://es.wikieducator.org/index.php?title=Especial:Libro&amp;bookcmd=book_creator&amp;referer=Usuario%3AJuanda%2Fjavascript%2FEventos">Crear un libro</a></li>
+			<li id="coll-download-as-rl"><a href="https://es.wikieducator.org/index.php?title=Especial:Libro&amp;bookcmd=render_article&amp;arttitle=Usuario%3AJuanda%2Fjavascript%2FEventos&amp;oldid=9858&amp;writer=rl">Descargar como PDF</a></li>
+			<li id="t-print"><a href="https://es.wikieducator.org/index.php?title=Usuario:Juanda/javascript/Eventos&amp;printable=yes" title="Versión imprimible de esta página [alt-shift-p]" accesskey="p">Versión para imprimir</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Esta página fue modificada por última vez el 15 oct 2012, a las 09:51.</li>
+											<li id="footer-info-viewcount">Esta página se ha visitado 4480 veces.</li>
+											<li id="footer-info-copyright">El contenido está disponible bajo  <a href="https://es.wikieducator.org/WikiEducator:Copyrights" title="WikiEducator:Copyrights">Creative Commons Attribution Share Alike License</a>  a menos que se indique lo contrario.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://es.wikieducator.org/WikiEducator:Pol%C3%ADtica_de_protecci%C3%B3n_de_datos" title="WikiEducator:Política de protección de datos">Política de protección de datos</a></li>
+											<li id="footer-places-about"><a href="https://es.wikieducator.org/WikiEducator:Acerca_de" title="WikiEducator:Acerca de">Acerca de WikiEducator</a></li>
+											<li id="footer-places-disclaimer"><a href="https://es.wikieducator.org/WikiEducator:Limitaci%C3%B3n_general_de_responsabilidad" title="WikiEducator:Limitación general de responsabilidad">Aviso legal</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="https://creativecommons.org/licenses/by-sa/3.0/"><img src="4_files/cc-by-sa.png" alt="Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="4_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.Links","ext.gadget.Subpages","mw.MwEmbedSupport.style","ext.eventLogging.subscriber","skins.vector.collapsibleNav"],null,true);
+}</script>
+<style>.MathJax_Display{display:inline !important;}
+.mathjax-wrapper{font-size:100%;}</style>
+<script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({displayAlign:'left',tex2jax:{displayMath:[['[math]','[/math]']]}})</script>
+<script src="4_files/MathJax.js"></script>
+<script src="4_files/load_003.php"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+})(window,document,'script','//www.google-analytics.com/analytics.js','hewlettOERTracker'); 
+
+hewlettOERTracker('create', 'UA-5033010-28', 'wikieducator.org'); 
+hewlettOERTracker('send', 'pageview'); 
+
+hewlettOERTracker('create', 'UA-7492888-1', 'wikieducator.org', {'name': 'we'}); 
+hewlettOERTracker('we.send', 'pageview'); 
+</script><script src="4_files/ga.js" type="text/javascript"></script><script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":56});
+}</script>
+	
+
+<div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

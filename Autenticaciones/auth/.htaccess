@@ -1,0 +1,4 @@
+AuthName "Sitio con restriccion de acceso"
+AuthType Basic
+AuthUserFile /var/www/html/credenciales
+Require valid-user alumno

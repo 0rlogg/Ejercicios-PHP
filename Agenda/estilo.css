@@ -1,0 +1,73 @@
+.center{
+    text-align: center;
+    color:darkblue;
+    font-weight: bold;
+    font-size:1,6em;
+    margin:30px;
+}
+table{
+    margin: 30px;
+
+}
+table, th, tr, td{
+    border-collapse: collapse;
+    border: 2px solid blue;
+    padding: 3px;
+
+}
+header {
+    #background: #9d3e42;
+    background: #5D6D7E;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color:darkorange;
+    float:none;
+}
+fieldset{
+    background : #AEB6BF;
+    float:left;
+    margin: 10px;
+    width:35%;
+}
+legend{
+    color:darkblue;
+    font-weight: bold;
+    font-size:1,6em;
+    font-style:oblique;
+}
+
+input[type=text]{
+    color:blue;
+    font-weight: bold;
+    font-size:1,6em;
+}
+input[type=submit]{
+    color:maroon;
+    font-weight: bold;
+    font-size:1,8em;
+    margin-top:20px;
+}
+input[type="submit"][disabled]{
+    color:darkgrey;
+    font-weight: normal;
+}
+
+label{
+    color:blue;
+    font-weight: bold;
+    font-size:1,4em;
+
+}
+.listado_contactos{
+    background : #AEB6BF;
+    float:right;
+    margin: 10px;
+    width:55%;
+}
+.variable{
+    color:maroon;
+    font-weight: bold;
+    font-size: 1.3em;
+}

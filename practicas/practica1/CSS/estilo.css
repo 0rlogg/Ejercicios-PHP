@@ -1,0 +1,103 @@
+h1 {
+    color: darkmagenta;
+    font-size: 4em;
+    margin-left: 10%;
+}
+
+.parrafo {
+    font-size: 1.8em;
+    margin-left: 5%;
+    color: maroon;
+}
+.titulo {
+    font-size: 1.9em;
+    margin-left: 5%;
+    font-weight: bold;
+    color: blue;
+}
+
+
+h2 {
+
+    font-size: 3em;
+    margin-left: 30%;
+/ / text-align: center;
+}
+
+h3 {
+
+    font-size: 2.5em;
+    margin-left: 10%;
+/ / text-align: center;
+}
+
+.msj {
+    font-size: 2.2em;
+    margin-left: 3%;
+    color: brown;
+}
+
+.variable {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+.cursiva {
+    font-style: oblique;
+}
+.center{
+    text-align:center;
+}
+.margin20{
+    margin-left:20px
+}
+
+html, body {
+    width: 100%;
+    background-color: #6A737C;
+}
+
+.enunciado {
+    background-color: #d2d28d;
+    margin: 1%;
+    float: left;
+    width: 32%;
+    padding: 0.75%
+
+}
+
+.solucion {
+    float: right;
+    background-color: #d2d28d;
+    padding: 0.25%;
+    margin: 1%;
+    width: 62%;
+
+}
+
+.pie {
+    position: relative;
+}
+
+table {
+    margin: 0 auto;
+    font-size: 1.5em;
+
+}
+
+td, tr, td {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.contenedor{
+    background-color: #d2d28d;
+    padding: 0.25%;
+    margin-left: 10%;
+    width: 80%;
+    align-content: center;
+
+}
